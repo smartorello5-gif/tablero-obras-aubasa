@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instalar App Tablero de Obras AUBASA en Android</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 32px 16px;
+      background: #070d18;
+      color: #f8fafc;
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .card {
+      max-width: 760px;
+      width: 100%;
+      background: #111d35;
+      border: 1px solid #334d72;
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+      text-align: center;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 10px;
+    }
+    .header img {
+      width: 58px;
+      height: 58px;
+      border-radius: 14px;
+      border: 1px solid #57d1e6;
+      box-shadow: 0 4px 16px rgba(87, 209, 230, 0.3);
+    }
+    h1 {
+      font-size: 1.55rem;
+      margin: 0;
+      font-weight: 800;
+    }
+    p.sub {
+      color: #93c5fd;
+      font-size: 0.95rem;
+      margin: 6px 0 24px 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+    .qr-box {
+      background: #162541;
+      border: 1px solid #355176;
+      border-radius: 18px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .qr-box.primary {
+      border-color: #10b981;
+      background: rgba(16, 185, 129, 0.09);
+    }
+    .badge {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 5px 11px;
+      border-radius: 99px;
+      margin-bottom: 10px;
+    }
+    .badge.green { background: rgba(16, 185, 129, 0.22); color: #34d399; }
+    .badge.blue { background: rgba(56, 189, 248, 0.22); color: #38bdf8; }
+    .qr-box img {
+      width: 210px;
+      height: 210px;
+      border-radius: 12px;
+      background: #fff;
+      padding: 8px;
+      margin: 10px 0 14px 0;
+    }
+    .url {
+      font-family: monospace;
+      font-size: 0.82rem;
+      color: #57d1e6;
+      background: rgba(0,0,0,0.35);
+      padding: 8px 12px;
+      border-radius: 8px;
+      word-break: break-all;
+      text-decoration: none;
+    }
+    .steps {
+      text-align: left;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid #2b4161;
+      border-radius: 14px;
+      padding: 16px 20px;
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      line-height: 1.65;
+    }
+    .steps strong { color: #fff; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <img src="icon-192.png" alt="AUBASA">
+      <div>
+        <h1>App Android · Tablero de Obras AUBASA</h1>
+      </div>
+    </div>
+    <p class="sub">Gerencia de Ingeniería y Obras · Sincronización automática en tiempo real con Partes Diarios</p>
+
+    <div class="grid">
+      <div class="qr-box primary">
+        <span class="badge green">⭐ Opción 1 · Instalar APK Nativo Android</span>
+        <div style="font-weight:700; font-size:0.95rem;">Descarga directa del instalador (.apk)</div>
+        <img src="qr_apk.png" alt="QR APK">
+        <a class="url" href="https://smartorello5-gif.github.io/tablero-obras-aubasa/Tablero_Obras_AUBASA.apk" target="_blank">Descargar Tablero_Obras_AUBASA.apk</a>
+      </div>
+
+      <div class="qr-box">
+        <span class="badge blue">🌐 Opción 2 · Abrir App Web / Instalar desde Chrome</span>
+        <div style="font-weight:700; font-size:0.95rem;">Acceso instantáneo + Botón Instalar</div>
+        <img src="qr_web.png" alt="QR Web">
+        <a class="url" href="https://smartorello5-gif.github.io/tablero-obras-aubasa/" target="_blank">https://smartorello5-gif.github.io/tablero-obras-aubasa/</a>
+      </div>
+    </div>
+
+    <div class="steps">
+      <strong>📲 Cómo instalarla en cualquier teléfono Android de la Gerencia:</strong>
+      <ol style="margin:8px 0 0 0; padding-left:20px;">
+        <li><strong>Por código QR o WhatsApp:</strong> Escaneá cualquiera de los códigos QR con la cámara del celular (o compartí el archivo <code>Tablero_Obras_AUBASA.apk</code> o el link por WhatsApp al grupo de la Gerencia).</li>
+        <li><strong>Instalación en 1 toque:</strong> Al abrir el link o descargar el APK, tocá <strong>"📦 Bajar APK"</strong> o <strong>"📲 Instalar"</strong> arriba de todo. Quedará el ícono <strong>Obras AUBASA</strong> en la pantalla de inicio del teléfono a pantalla completa.</li>
+        <li><strong>Actualización automática sin subir archivos:</strong> El botón <strong>"Actualizar datos"</strong> dentro de la app trae al instante los últimos valores sincronizados desde los Partes Diarios y el Tablero de Control, sin pedir subir el Excel ni ingresar contraseñas.</li>
+      </ol>
+    </div>
+  </div>
+</body>
+</html>
