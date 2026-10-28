@@ -1,5 +1,6 @@
 {
   "modificado": "2026-10-28",
+  "actualizado": "2026-10-28T15:26:10.061616+00:00",
   "obras": [
     {
       "id": "9",
@@ -8,7 +9,7 @@
       "corto": "KM 203 (DOLORES) A KM 273 (MAIPÚ) ETAPA 1",
       "contratista": "CONCRETNOR-MARCALBA",
       "contrato": 19084903133.419994,
-      "ejecutado": 18075811137.49,
+      "ejecutado": 85516866277.38,
       "previsto": 13392647300.525045,
       "fin": "2027-04-07",
       "plazo": 0.7,
@@ -132,7 +133,7 @@
       "produccion_efectiva": {
         "toneladas": 0,
         "dias": 0,
-        "corte": "2026-10-26",
+        "corte": "2026-10-27",
         "promedio": null
       }
     },
@@ -251,24 +252,24 @@
       "corto": "KM 250 (CONESA) A KM 225 (ESQ. CROTTO)",
       "contratista": "MARCALBA",
       "contrato": 11981882529.25,
-      "ejecutado": 6619898394.249999,
-      "previsto": 3982873349.3700247,
+      "ejecutado": 6717779492.829999,
+      "previsto": 4031143038.793478,
       "fin": "2027-06-06",
       "plazo": 0.38333333333333336,
       "toneladas_previstas": 43366.584,
-      "toneladas_colocadas": 23287.695359999998,
+      "toneladas_colocadas": 23758.341359999995,
       "longitud_total_m": 25000.0,
-      "longitud_intervenida_m": 11792.301297505941,
+      "longitud_intervenida_m": 12131.5827946162,
       "plazo_contrato_dias": 360,
       "dias_corridos_consumidos": 138,
       "plazo_corte": "2026-10-28",
       "inicio": "2026-06-12",
       "fin_prevista": "2027-06-06",
       "produccion_efectiva": {
-        "toneladas": 30800.299199999998,
-        "dias": 73,
-        "corte": "2026-10-26",
-        "promedio": 421.92190684931506
+        "toneladas": 31336.2204,
+        "dias": 74,
+        "corte": "2026-10-27",
+        "promedio": 423.4624378378378
       }
     },
     {
@@ -503,6 +504,5 @@
         "promedio": 293.21676190476194
       }
     }
-  ],
-  "actualizado": "2026-10-28T13:57:08.649242+00:00"
+  ]
 }
