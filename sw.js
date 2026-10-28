@@ -1,11 +1,10 @@
-const CACHE_NAME = 'aubasa-obras-v2';
+const CACHE_NAME = 'aubasa-obras-v4';
 const ASSETS = [
   './',
   './index.html',
   './manifest.json',
   './icon-192.png',
-  './icon-512.png',
-  './data.json'
+  './icon-512.png'
 ];
 
 self.addEventListener('install', event => {
@@ -25,6 +24,10 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
+  const u = event.request.url;
+  if (u.includes('data.json') || u.includes('api.github.com') || u.includes('api/data')) {
+    return;
+  }
   event.respondWith(
     fetch(event.request, { cache: 'no-store' })
       .then(resp => {
