@@ -6,15 +6,16 @@
 
   <meta charset="utf-8">
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 
   <meta name="theme-color" content="#111d35">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Obras AUBASA">
   <link rel="manifest" href="manifest.json">
   <link rel="icon" type="image/png" href="./icon-192.png">
-  <link rel="apple-touch-icon" href="./icon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
 
   <title>Tablero ejecutivo de obras | AUBASA</title>
 
@@ -129,7 +130,27 @@
 .install-btn.pwa{background:#0284c7}
 .sync-toast{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:#065f46;color:#ecfdf5;border:1px solid #34d399;padding:10px 16px;border-radius:999px;font-size:12px;font-weight:800;box-shadow:0 8px 25px #000a;z-index:50;opacity:0;pointer-events:none;transition:opacity .25s ease}
 .sync-toast.show{opacity:1}
-@media print{.install-banner,.sync-toast{display:none!important}}
+
+.install-btn.ios{background:#f8fafc;color:#0f172a;border:1px solid #cbd5e1}
+.ios-modal{position:fixed;inset:0;background:rgba(2,7,17,0.85);backdrop-filter:blur(6px);display:none;place-items:center;padding:18px;z-index:60}
+.ios-modal.open{display:grid}
+.ios-dialog{width:min(440px,100%);background:#111d35;border:1px solid #38bdf8;border-radius:18px;padding:22px;color:#f8fafc;box-shadow:0 20px 50px rgba(0,0,0,0.7)}
+.ios-dialog h3{margin:0 0 8px 0;font-size:18px;display:flex;align-items:center;gap:8px}
+.ios-steps{margin:12px 0;padding:14px 16px;background:#162541;border:1px solid #2b4161;border-radius:12px;font-size:13.5px;line-height:1.65;color:#dbeafe}
+.ios-steps ol{margin:0;padding-left:18px}
+.ios-steps li{margin-bottom:8px}
+.ios-steps li:last-child{margin-bottom:0}
+.ios-profile-box{margin-top:12px;padding:12px;background:rgba(56,189,248,0.1);border:1px dashed #38bdf8;border-radius:10px;text-align:center;font-size:12px;color:#bae6fd}
+.ios-profile-box a{display:inline-block;margin-top:7px;padding:8px 14px;background:#0284c7;color:#fff;border-radius:8px;text-decoration:none;font-weight:800;font-size:12px}
+.ios-close{margin-top:14px;width:100%;padding:11px;border:0;border-radius:10px;background:#334d72;color:#fff;font-weight:800;font-size:14px;cursor:pointer}
+@supports(padding-top:env(safe-area-inset-top)){
+  @media all and (display-mode: standalone){
+    .topbar{padding-top:calc(12px + env(safe-area-inset-top))}
+  }
+  .sync-toast{bottom:calc(16px + env(safe-area-inset-bottom))}
+}
+
+@media print{.install-banner,.sync-toast,.ios-modal{display:none!important}}
 </style>
 
 </head>
@@ -139,12 +160,33 @@
 <div class="app">
   <div class="install-banner" id="installBanner">
     <div class="install-banner-left">
-      <img src="./icon-192.png" alt="AUBASA">
-      <div class="install-banner-text">App Android · Gerencia de Obras AUBASA<span>Instalala en tu teléfono para acceso directo</span></div>
+      <img src="./apple-touch-icon.png" alt="AUBASA">
+      <div class="install-banner-text" id="installBannerTitle">App Móvil · Gerencia de Obras AUBASA<span>Disponible para Android (APK) y iPhone / iPad (iOS)</span></div>
     </div>
     <div class="install-banner-actions">
-      <a href="./Tablero_Obras_AUBASA.apk" download="Tablero_Obras_AUBASA.apk" class="install-btn apk">📦 Bajar APK</a>
+      <a href="./Tablero_Obras_AUBASA.apk" download="Tablero_Obras_AUBASA.apk" id="androidApkBtn" class="install-btn apk">🤖 APK Android</a>
+      <button type="button" id="iosInstallBtn" class="install-btn ios">🍎 App iOS</button>
       <button type="button" id="pwaInstallBtn" class="install-btn pwa">📲 Instalar</button>
+    </div>
+  </div>
+  <div class="ios-modal" id="iosModal">
+    <div class="ios-dialog" role="dialog" aria-modal="true">
+      <h3>🍎 Instalar App en iPhone / iPad</h3>
+      <div style="font-size:12.5px;color:#93c5fd;">Elegí cualquiera de los 2 métodos para dejar el ícono <b>Obras AUBASA</b> a pantalla completa en iOS:</div>
+      <div class="ios-steps">
+        <b>Método 1 · Directo desde Safari (Recomendado):</b>
+        <ol style="margin-top:6px;">
+          <li>Tocá el botón <b>Compartir</b> <span style="background:#253f68;padding:2px 6px;border-radius:5px;font-weight:800;">⎋</span> en la barra de Safari (abajo en iPhone, arriba en iPad).</li>
+          <li>Deslizá hacia abajo y tocá <b>"Agregar a inicio" (Add to Home Screen) ➕</b>.</li>
+          <li>Tocá <b>"Agregar"</b> arriba a la derecha.</li>
+        </ol>
+      </div>
+      <div class="ios-profile-box">
+        <b>Método 2 · Instalador de Perfil iOS (WebClip Nativo):</b><br>
+        Descargá el paquete de configuración para iPhone/iPad y activalo en <i>Ajustes → Perfil descargado</i>:
+        <br><a href="./Tablero_Obras_AUBASA.mobileconfig">📥 Descargar Instalador iOS (.mobileconfig)</a>
+      </div>
+      <button type="button" class="ios-close" id="iosModalClose">Entendido</button>
     </div>
   </div>
   <div class="sync-toast" id="syncToast">✓ Datos sincronizados</div>
@@ -349,25 +391,55 @@ document.getElementById('linkedUpdate').addEventListener('click',async()=>{
   }
 });
 
-// PWA Install Logic & Standalone detection
+// PWA Install Logic & Android/iOS detection
 const installBanner=document.getElementById('installBanner');
 const pwaInstallBtn=document.getElementById('pwaInstallBtn');
+const iosInstallBtn=document.getElementById('iosInstallBtn');
+const androidApkBtn=document.getElementById('androidApkBtn');
+const iosModal=document.getElementById('iosModal');
+const iosModalClose=document.getElementById('iosModalClose');
+const isIOS=/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+const isAndroid=/Android/i.test(navigator.userAgent);
 let deferredPrompt=null;
+
 if(window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true||location.search.includes('app=v1')){
   installBanner.classList.add('hidden');
+}else if(isIOS){
+  if(androidApkBtn)androidApkBtn.style.display='none';
+  if(pwaInstallBtn)pwaInstallBtn.style.display='none';
+  const bt=document.getElementById('installBannerTitle');
+  if(bt)bt.innerHTML='App iOS · Gerencia de Obras AUBASA<span>Instalala en tu iPhone o iPad a pantalla completa</span>';
+  if(location.search.includes('ios=1')&&iosModal)iosModal.classList.add('open');
+}else if(isAndroid){
+  if(iosInstallBtn)iosInstallBtn.style.display='none';
+  const bt=document.getElementById('installBannerTitle');
+  if(bt)bt.innerHTML='App Android · Gerencia de Obras AUBASA<span>Instalala en tu teléfono para acceso directo</span>';
 }
+
+if(iosInstallBtn&&iosModal){
+  iosInstallBtn.addEventListener('click',()=>iosModal.classList.add('open'));
+}
+if(iosModalClose&&iosModal){
+  iosModalClose.addEventListener('click',()=>iosModal.classList.remove('open'));
+  iosModal.addEventListener('click',e=>{if(e.target===iosModal)iosModal.classList.remove('open')});
+}
+
 window.addEventListener('beforeinstallprompt',e=>{
   e.preventDefault();
   deferredPrompt=e;
 });
 pwaInstallBtn.addEventListener('click',async()=>{
+  if(isIOS&&iosModal){
+    iosModal.classList.add('open');
+    return;
+  }
   if(deferredPrompt){
     deferredPrompt.prompt();
     const {outcome}=await deferredPrompt.userChoice;
     if(outcome==='accepted')installBanner.classList.add('hidden');
     deferredPrompt=null;
   }else{
-    alert('Para instalar en Android: tocá el botón verde "📦 Bajar APK" o abrí el menú ⋮ de Chrome y elegí "Instalar aplicación".');
+    alert('Para instalar en Android: tocá "🤖 APK Android" o abrí el menú ⋮ de Chrome y elegí "Instalar aplicación". En iPhone/iPad: tocá "🍎 App iOS".');
   }
 });
 window.addEventListener('appinstalled',()=>installBanner.classList.add('hidden'));

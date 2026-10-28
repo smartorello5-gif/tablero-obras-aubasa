@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Instalar App Tablero de Obras AUBASA en Android</title>
+  <title>Instalar App Tablero de Obras AUBASA · Android y iOS (iPhone/iPad)</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      padding: 32px 16px;
+      padding: 28px 16px;
       background: #070d18;
       color: #f8fafc;
       font-family: 'Inter', sans-serif;
@@ -18,7 +18,7 @@
       min-height: 100vh;
     }
     .card {
-      max-width: 760px;
+      max-width: 1040px;
       width: 100%;
       background: #111d35;
       border: 1px solid #334d72;
@@ -32,7 +32,7 @@
       align-items: center;
       justify-content: center;
       gap: 14px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
     .header img {
       width: 58px;
@@ -53,8 +53,8 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
       margin-bottom: 24px;
     }
     .qr-box {
@@ -66,48 +66,68 @@
       flex-direction: column;
       align-items: center;
     }
-    .qr-box.primary {
+    .qr-box.android {
       border-color: #10b981;
       background: rgba(16, 185, 129, 0.09);
+    }
+    .qr-box.ios {
+      border-color: #f8fafc;
+      background: rgba(248, 250, 252, 0.07);
     }
     .badge {
       font-size: 0.72rem;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 0.06em;
-      padding: 5px 11px;
+      padding: 5px 12px;
       border-radius: 99px;
       margin-bottom: 10px;
     }
     .badge.green { background: rgba(16, 185, 129, 0.22); color: #34d399; }
+    .badge.apple { background: rgba(248, 250, 252, 0.2); color: #ffffff; }
     .badge.blue { background: rgba(56, 189, 248, 0.22); color: #38bdf8; }
     .qr-box img {
-      width: 210px;
-      height: 210px;
+      width: 200px;
+      height: 200px;
       border-radius: 12px;
       background: #fff;
       padding: 8px;
       margin: 10px 0 14px 0;
     }
-    .url {
-      font-family: monospace;
-      font-size: 0.82rem;
-      color: #57d1e6;
-      background: rgba(0,0,0,0.35);
-      padding: 8px 12px;
-      border-radius: 8px;
-      word-break: break-all;
+    .btn-dl {
+      display: inline-block;
+      font-size: 0.84rem;
+      font-weight: 800;
+      padding: 10px 16px;
+      border-radius: 10px;
       text-decoration: none;
+      margin-bottom: 8px;
+      width: 90%;
+      box-sizing: border-box;
+    }
+    .btn-dl.green { background: #10b981; color: #fff; }
+    .btn-dl.apple { background: #f8fafc; color: #0f172a; }
+    .btn-dl.blue { background: #0284c7; color: #fff; }
+    .sub-link {
+      font-size: 0.76rem;
+      color: #93c5fd;
+      text-decoration: underline;
+      margin-top: 4px;
+    }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+      text-align: left;
     }
     .steps {
-      text-align: left;
       background: rgba(255,255,255,0.04);
       border: 1px solid #2b4161;
       border-radius: 14px;
       padding: 16px 20px;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       color: #cbd5e1;
-      line-height: 1.65;
+      line-height: 1.6;
     }
     .steps strong { color: #fff; }
   </style>
@@ -115,36 +135,53 @@
 <body>
   <div class="card">
     <div class="header">
-      <img src="icon-192.png" alt="AUBASA">
+      <img src="apple-touch-icon.png" alt="AUBASA">
       <div>
-        <h1>App Android · Tablero de Obras AUBASA</h1>
+        <h1>App Móvil · Tablero de Obras AUBASA</h1>
       </div>
     </div>
-    <p class="sub">Gerencia de Ingeniería y Obras · Sincronización automática en tiempo real con Partes Diarios</p>
+    <p class="sub">Gerencia de Ingeniería y Obras · Disponible para <b>Android</b> y <b>iPhone / iPad (iOS)</b></p>
 
     <div class="grid">
-      <div class="qr-box primary">
-        <span class="badge green">⭐ Opción 1 · Instalar APK Nativo Android</span>
-        <div style="font-weight:700; font-size:0.95rem;">Descarga directa del instalador (.apk)</div>
-        <img src="qr_apk.png" alt="QR APK">
-        <a class="url" href="https://smartorello5-gif.github.io/tablero-obras-aubasa/Tablero_Obras_AUBASA.apk" target="_blank">Descargar Tablero_Obras_AUBASA.apk</a>
+      <div class="qr-box android">
+        <span class="badge green">🤖 Teléfonos Android</span>
+        <div style="font-weight:700; font-size:0.95rem;">Instalador Nativo APK</div>
+        <img src="qr_apk.png" alt="QR Android APK">
+        <a class="btn-dl green" href="https://smartorello5-gif.github.io/tablero-obras-aubasa/Tablero_Obras_AUBASA.apk" target="_blank">📦 Descargar Tablero_Obras_AUBASA.apk</a>
+      </div>
+
+      <div class="qr-box ios">
+        <span class="badge apple">🍎 iPhone y iPad (iOS)</span>
+        <div style="font-weight:700; font-size:0.95rem;">App iOS Pantalla Completa</div>
+        <img src="qr_ios.png" alt="QR iPhone iOS">
+        <a class="btn-dl apple" href="https://smartorello5-gif.github.io/tablero-obras-aubasa/?ios=1" target="_blank">🍎 Abrir e Instalar en iPhone</a>
+        <a class="sub-link" href="https://smartorello5-gif.github.io/tablero-obras-aubasa/Tablero_Obras_AUBASA.mobileconfig">O descargar perfil WebClip (.mobileconfig)</a>
       </div>
 
       <div class="qr-box">
-        <span class="badge blue">🌐 Opción 2 · Abrir App Web / Instalar desde Chrome</span>
-        <div style="font-weight:700; font-size:0.95rem;">Acceso instantáneo + Botón Instalar</div>
+        <span class="badge blue">🌐 Acceso Web Directo</span>
+        <div style="font-weight:700; font-size:0.95rem;">Android · iOS · PC</div>
         <img src="qr_web.png" alt="QR Web">
-        <a class="url" href="https://smartorello5-gif.github.io/tablero-obras-aubasa/" target="_blank">https://smartorello5-gif.github.io/tablero-obras-aubasa/</a>
+        <a class="btn-dl blue" href="https://smartorello5-gif.github.io/tablero-obras-aubasa/" target="_blank">🌐 Abrir Tablero en Vivo</a>
       </div>
     </div>
 
-    <div class="steps">
-      <strong>📲 Cómo instalarla en cualquier teléfono Android de la Gerencia:</strong>
-      <ol style="margin:8px 0 0 0; padding-left:20px;">
-        <li><strong>Por código QR o WhatsApp:</strong> Escaneá cualquiera de los códigos QR con la cámara del celular (o compartí el archivo <code>Tablero_Obras_AUBASA.apk</code> o el link por WhatsApp al grupo de la Gerencia).</li>
-        <li><strong>Instalación en 1 toque:</strong> Al abrir el link o descargar el APK, tocá <strong>"📦 Bajar APK"</strong> o <strong>"📲 Instalar"</strong> arriba de todo. Quedará el ícono <strong>Obras AUBASA</strong> en la pantalla de inicio del teléfono a pantalla completa.</li>
-        <li><strong>Actualización automática sin subir archivos:</strong> El botón <strong>"Actualizar datos"</strong> dentro de la app trae al instante los últimos valores sincronizados desde los Partes Diarios y el Tablero de Control, sin pedir subir el Excel ni ingresar contraseñas.</li>
-      </ol>
+    <div class="steps-grid">
+      <div class="steps">
+        <strong>🤖 Cómo instalar en Android:</strong>
+        <ol style="margin:8px 0 0 0; padding-left:20px;">
+          <li>Escaneá el <b>QR verde</b> o abrí el archivo <code>Tablero_Obras_AUBASA.apk</code> enviado por WhatsApp.</li>
+          <li>Confirmá <b>"Instalar"</b> y quedará la app <b>Obras AUBASA</b> en tu pantalla de inicio.</li>
+        </ol>
+      </div>
+      <div class="steps">
+        <strong>🍎 Cómo instalar en iPhone / iPad (iOS):</strong>
+        <ol style="margin:8px 0 0 0; padding-left:20px;">
+          <li>Escaneá el <b>QR blanco (iOS)</b> con la cámara del iPhone para abrirlo en <b>Safari</b>.</li>
+          <li>Tocá el botón <b>Compartir (⎋)</b> abajo en Safari y elegí <b>"Agregar a inicio" (➕)</b> (o descargá el perfil <code>.mobileconfig</code>).</li>
+          <li>Quedará instalada con el ícono oficial <b>Obras AUBASA</b> a pantalla completa y actualización en 1 toque.</li>
+        </ol>
+      </div>
     </div>
   </div>
 </body>
