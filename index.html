@@ -1,0 +1,375 @@
+<!doctype html>
+
+<html lang="es-AR">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <meta name="theme-color" content="#111d35">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="./icon-192.png">
+  <link rel="apple-touch-icon" href="./icon-192.png">
+
+  <title>Tablero ejecutivo de obras | AUBASA</title>
+
+  <style>
+
+    :root{font-family:Inter,Arial,sans-serif;color:#eaf2ff;background:#070d18;font-size:16px;--navy:#111d35;--panel:#162541;--panel2:#1b2e50;--line:#334d72;--blue:#43a5e6;--cyan:#57d1e6;--orange:#f0a35a;--green:#42c18b;--red:#ef6671;--muted:#91a7c6}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 75% 0,#182b4b 0,#070d18 43%);min-height:100vh}.app{max-width:1680px;margin:auto;min-height:100vh;background:#0b1426;box-shadow:0 0 70px #0008}.topbar{height:92px;padding:0 28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #314768;background:linear-gradient(90deg,#172641,#111d35)}.brand small{display:block;color:#63cdec;font-size:.68rem;font-weight:800;letter-spacing:.18em}.brand h1{font-size:1.65rem;margin:6px 0 0;letter-spacing:-.02em}.top-actions{display:flex;align-items:center;gap:9px}.date{color:#a7b8d1;font-size:.78rem;margin-right:8px}.action{border:1px solid #4b6488;background:#203758;color:white;border-radius:7px;padding:10px 14px;font:inherit;font-size:.78rem;font-weight:800;cursor:pointer}.action.update{background:#087e6a;border-color:#19a58c}.action.print{background:#a86328;border-color:#d38a48}.layout{display:grid;grid-template-columns:220px 1fr;min-height:calc(100vh - 92px)}.sidebar{background:#101c32;border-right:1px solid #314768;padding:24px 16px}.nav-label{font-size:.66rem;color:#6f88ad;font-weight:800;letter-spacing:.14em;margin:0 8px 10px}.nav-button{width:100%;text-align:left;border:1px solid #355074;background:#1a2d4d;color:#cbd8eb;border-radius:7px;padding:14px;margin-bottom:9px;font:inherit;font-weight:800;cursor:pointer}.nav-button.active{background:linear-gradient(90deg,#315d96,#253f68);color:white;border-color:#5c84bb;box-shadow:inset 4px 0 #58c8ec}.nav-button span{display:block;color:#849bbb;font-size:.68rem;font-weight:500;margin-top:4px}.source-card{border-top:1px solid #2b4161;margin-top:26px;padding:18px 8px 0;color:#8298b8;font-size:.7rem;line-height:1.55}.main{padding:22px;min-width:0}.screen{display:none}.screen.active{display:block}.screen-title{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:15px}.screen-title h2{font-size:1.25rem;margin:0}.screen-title p{color:#8ea4c3;font-size:.78rem;margin:5px 0 0}.badge{border:1px solid #42618a;color:#9eb5d3;border-radius:999px;padding:7px 11px;font-size:.7rem}.kpis{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-bottom:12px}.kpi{background:linear-gradient(155deg,#203657,#152540);border:1px solid #355176;border-radius:8px;min-height:94px;padding:12px;position:relative;overflow:hidden}.kpi:after{content:"";position:absolute;inset:auto 0 0;height:3px;background:var(--accent,#4fa9e3)}.kpi label{display:block;color:#93a8c6;font-size:.65rem;text-transform:uppercase;font-weight:800;letter-spacing:.06em}.kpi strong{display:block;font-size:1.35rem;margin-top:15px;color:#fff}.kpi small{color:#7891b3;font-size:.68rem}.grid-main{display:grid;grid-template-columns:2.25fr .8fr;gap:12px}.panel{background:linear-gradient(155deg,#172946,#12213a);border:1px solid #334d72;border-radius:8px;overflow:hidden}.panel-title{height:38px;background:#203758;border-bottom:1px solid #3a557b;display:flex;align-items:center;justify-content:space-between;padding:0 12px;font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.04em}.panel-title span{color:#8199bb;font-weight:500;text-transform:none}.bars{padding:12px;display:grid;gap:7px}.barrow{display:grid;grid-template-columns:180px 1fr 52px;gap:8px;align-items:center;font-size:.7rem}.bar-name{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#dbe8f8}.track{height:16px;background:#263b5b;border-radius:3px;position:relative;overflow:hidden}.plan{height:100%;position:absolute;background:#d98a50;opacity:.78}.actual{height:8px;top:4px;position:absolute;background:#4aaee8;border-radius:2px}.legend{display:flex;gap:16px;color:#92a7c4;font-size:.68rem}.legend i{display:inline-block;width:11px;height:7px;margin-right:4px}.state-list{padding:12px;display:grid;gap:8px}.state-box{display:flex;align-items:center;justify-content:space-between;border:1px solid #324c70;background:#1b2d4b;border-radius:7px;padding:13px}.state-box span{font-size:.75rem;font-weight:800}.state-box b{font-size:1.25rem}.state-box.good b{color:var(--green)}.state-box.line b{color:var(--orange)}.state-box.bad b{color:var(--red)}.portfolio-note{margin:0 12px 12px;padding:10px;background:#243555;border-left:3px solid var(--cyan);color:#aabbd1;font-size:.68rem;line-height:1.45}.work-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:12px}.work-card{background:linear-gradient(150deg,#1d3151,#14243e);border:1px solid #355174;border-radius:8px;padding:12px;position:relative;overflow:hidden}.work-card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--state)}.work-head{display:flex;justify-content:space-between;gap:8px}.work-head h3{font-size:.73rem;margin:0;line-height:1.3}.state-pill{border:1px solid currentColor;color:var(--state);border-radius:999px;padding:3px 6px;font-size:.55rem;font-weight:900;white-space:nowrap}.work-body{display:flex;align-items:center;gap:11px;margin:11px 0}.ring{width:58px;height:58px;border-radius:50%;background:conic-gradient(var(--blue) calc(var(--p)*1%),#2a3d5b 0);display:grid;place-items:center;position:relative;flex:0 0 auto}.ring:after{content:"";position:absolute;width:43px;height:43px;background:#172845;border-radius:50%}.ring b{z-index:1;font-size:.68rem}.work-data{color:#8fa5c3;font-size:.65rem;line-height:1.7}.work-data b{color:white}.physical{display:grid;grid-template-columns:1fr 1fr;gap:6px}.physical div{background:#203754;padding:7px;border-radius:5px;color:#88a0c0;font-size:.6rem}.physical b{display:block;color:#ddecfb;font-size:.68rem;margin-top:3px}.table-panel{margin-top:12px}.tablewrap{overflow:auto;max-height:420px}table{border-collapse:collapse;width:100%;font-size:.67rem}th{position:sticky;top:0;background:#223a5e;color:#b8cae1;text-transform:uppercase;font-size:.58rem;letter-spacing:.04em;z-index:1}th,td{padding:9px 8px;border-bottom:1px solid #2a4265;text-align:left;white-space:nowrap}td.name{white-space:normal;min-width:210px;color:#eef5ff;font-weight:700}td small{display:block;color:#8198b8;font-weight:400;margin-top:3px}.num{text-align:right}.completed-hero{display:grid;grid-template-columns:1.15fr 1fr;gap:12px}.completed-summary{padding:20px;display:flex;align-items:center;justify-content:space-around}.big-number{text-align:center}.big-number strong{display:block;font-size:2.5rem;color:#58c8ec}.big-number span{color:#8fa5c3;font-size:.68rem;text-transform:uppercase}.completed-bars{padding:14px;display:grid;gap:10px}.completed-bar{display:grid;grid-template-columns:175px 1fr 55px;gap:9px;align-items:center;font-size:.68rem}.completed-track{height:20px;background:#263b59;position:relative}.completed-track span{display:block;height:100%;background:linear-gradient(90deg,#377fc2,#5bc5e8)}.completed-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}.done-card{background:#182a47;border:1px solid #355174;border-radius:8px;padding:13px}.done-card h3{font-size:.75rem;margin:0 0 10px}.done-card p{color:#8fa5c3;font-size:.65rem;margin:4px 0}.done-card b{color:#fff}.modal{position:fixed;inset:0;background:#020711dc;display:none;place-items:center;padding:18px;z-index:20}.modal.open{display:grid}.dialog{width:min(500px,100%);background:#162844;border:1px solid #46658e;border-radius:10px;padding:22px}.dialog h2{margin:0}.dialog p{color:#a7b8d0;line-height:1.45}.dialog label{display:block;font-size:.72rem;font-weight:800;margin:15px 0 6px}.dialog input{width:100%;border:1px solid #4c668a;background:#0e1b30;color:white;border-radius:6px;padding:11px;font:inherit}.dialog-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:17px}.dialog-actions button{border:0;border-radius:6px;padding:10px 13px;font-weight:800;cursor:pointer}.cancel{background:#304563;color:#fff}.confirm{background:#087e6a;color:#fff}.message{min-height:20px;font-size:.72rem;font-weight:800}.error{color:#ff7d86}.ok{color:#53d39a}@media(max-width:1100px){.layout{grid-template-columns:1fr}.sidebar{display:flex;gap:8px;padding:10px;position:sticky;top:0;z-index:5}.nav-label,.source-card{display:none}.nav-button{width:auto;margin:0}.kpis{grid-template-columns:repeat(3,1fr)}.work-grid,.completed-cards{grid-template-columns:repeat(2,1fr)}}@media(max-width:700px){.topbar{height:auto;padding:16px;align-items:flex-start}.top-actions{flex-wrap:wrap;justify-content:flex-end}.date{width:100%;text-align:right}.main{padding:12px}.grid-main,.completed-hero{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,1fr)}.work-grid,.completed-cards{grid-template-columns:1fr}.barrow{grid-template-columns:110px 1fr 48px}.brand h1{font-size:1.2rem}.action{padding:8px}.nav-button span{display:none}}
+
+    /* Edición institucional: dos grandes láminas de gestión. */
+
+    .topbar{background:linear-gradient(90deg,#0d2543,#153b67 62%,#0b6681);border-bottom:3px solid var(--cyan)}.brand h1{font-size:1.8rem}.layout{grid-template-columns:190px 1fr}.sidebar{background:linear-gradient(#0c1930,#122541)}.nav-button.active{background:linear-gradient(90deg,#167aa2,#27568f);box-shadow:inset 4px 0 #77e5f4,0 8px 22px #0005}.main{padding:16px 18px}.screen-title{margin-bottom:10px}.screen-title h2{font-size:1.42rem}.badge{background:#1b4166;color:#bfeeff;border-color:#46b8d3}.kpis{gap:8px;margin-bottom:9px}.kpi{min-height:82px;background:linear-gradient(150deg,#25476d,#142942);box-shadow:0 7px 18px #0004}.kpi strong{font-size:1.42rem;margin-top:10px}.grid-main{gap:9px}.panel{box-shadow:0 7px 20px #0004}.bars{padding:9px;gap:5px}.barrow{grid-template-columns:165px 1fr 50px}.state-list{padding:9px;gap:6px}.state-box{padding:10px}.portfolio-note{margin:0 9px 9px}.work-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin-top:9px}.work-card{padding:10px;min-height:142px;box-shadow:0 7px 18px #0004}.work-body{margin:8px 0}.physical{grid-template-columns:repeat(3,1fr);gap:4px}.physical div{padding:5px;font-size:.56rem}.physical b{font-size:.61rem}.table-panel{display:none}.completed-hero{gap:9px}.completed-summary{padding:15px}.completed-bars{padding:10px;gap:6px}.completed-cards{gap:8px;margin-top:9px}.done-card{background:linear-gradient(150deg,#1d3557,#13253f);border-left:4px solid #42c18b;box-shadow:0 7px 18px #0004}.done-card h3{padding-right:55px}.done-card{position:relative}.done-card:after{content:'FINALIZADA';position:absolute;right:9px;top:9px;color:#63e2a8;font-size:.5rem;font-weight:900;letter-spacing:.05em}.done-card .done-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:5px;margin-top:8px}.done-card .done-grid p{background:#10223b;padding:6px;border-radius:5px;margin:0}.done-card .finish{color:#61cae4;margin-top:8px}.screen.active{animation:screenIn .35s ease-out}@keyframes screenIn{from{opacity:.25;transform:translateY(7px)}to{opacity:1;transform:none}}@media(min-width:1200px) and (min-height:750px){.app{height:100vh;overflow:hidden}.layout{height:calc(100vh - 92px);min-height:0}.main{overflow:hidden}.screen.active{height:100%;overflow:hidden}.work-grid{grid-template-rows:repeat(3,minmax(0,1fr));height:calc(100% - 318px)}.work-card{min-height:0}.completed-cards{grid-template-rows:repeat(2,minmax(0,1fr));height:calc(100% - 320px)}.done-card{min-height:0}}@page{size:A1 landscape;margin:8mm}@media print{body{background:#070d18!important;color:#eaf2ff;-webkit-print-color-adjust:exact;print-color-adjust:exact}.app{max-width:none;box-shadow:none;background:#0b1426}.topbar{display:none!important}.top-actions,.sidebar{display:none!important}.layout{display:block;min-height:0}.main{padding:0}.screen{display:block!important;width:825mm!important;height:578mm!important;overflow:hidden!important;padding:7mm!important;break-after:page}.screen:last-child{break-after:auto}.screen-title{color:#fff}.screen-title p{color:#91a7c6}.kpi,.panel,.work-card,.done-card{break-inside:avoid}.kpis{grid-template-columns:repeat(6,1fr);gap:3mm}.kpi{height:35mm}.kpi strong{font-size:22pt}.grid-main{grid-template-columns:2.25fr .8fr;height:138mm;gap:3mm}.bars{gap:2mm}.barrow{grid-template-columns:65mm 1fr 18mm;font-size:9pt}.track{height:8mm}.actual{height:4mm;top:2mm}.work-grid{grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(3,1fr);height:365mm;gap:3mm}.work-card{min-height:0;padding:4mm}.work-head h3{font-size:13pt}.state-pill{font-size:8pt}.ring{width:24mm;height:24mm}.ring:after{width:18mm;height:18mm}.ring b{font-size:10pt}.work-data{font-size:9pt}.physical div{font-size:8pt}.physical b{font-size:9pt}.completed-hero{height:142mm;gap:3mm}.completed-cards{grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,1fr);height:374mm;gap:3mm}.done-card{padding:5mm}.done-card h3{font-size:17pt}.done-card p{font-size:10pt}.table-panel{display:none!important}.action{display:none}}
+
+    /* Barra lateral más compacta. */
+
+    @media(min-width:1101px){.layout{grid-template-columns:54px minmax(0,1fr)}.sidebar{position:relative;width:54px;padding:14px 7px;overflow:visible;z-index:10;transition:width .22s ease;box-shadow:8px 0 20px #0003}.sidebar:hover,.sidebar.open,.sidebar:focus-within{width:190px;box-shadow:18px 0 35px #0009}.sidebar-toggle{display:block;width:38px;height:38px;border:1px solid #4c7198;border-radius:7px;background:#1b3c60;color:#bcefff;font-size:1.05rem;font-weight:900;cursor:pointer;margin:0 0 14px}.sidebar .nav-label,.sidebar .source-card{opacity:0;visibility:hidden;white-space:nowrap;transition:opacity .12s}.sidebar .nav-button{width:40px;height:54px;padding:0;font-size:0;text-align:center;overflow:hidden;white-space:nowrap;transition:width .22s,padding .22s}.sidebar .nav-button:before{content:attr(data-short);font-size:.8rem;color:#d9efff;font-weight:900}.sidebar .nav-button span{display:none}.sidebar:hover .nav-label,.sidebar.open .nav-label,.sidebar:focus-within .nav-label,.sidebar:hover .source-card,.sidebar.open .source-card,.sidebar:focus-within .source-card{opacity:1;visibility:visible}.sidebar:hover .nav-button,.sidebar.open .nav-button,.sidebar:focus-within .nav-button{width:170px;height:auto;min-height:54px;padding:11px 10px;font-size:.78rem;text-align:left;white-space:normal}.sidebar:hover .nav-button:before,.sidebar.open .nav-button:before,.sidebar:focus-within .nav-button:before{display:none}.sidebar:hover .nav-button span,.sidebar.open .nav-button span,.sidebar:focus-within .nav-button span{display:block;font-size:.62rem;line-height:1.25}.main{min-width:0;overflow-x:auto}}
+
+    @media(max-width:1100px){.sidebar-toggle{display:none}}
+
+    /* Legibilidad prioritaria en monitores de oficina y pantallas grandes. */
+
+    .app{max-width:none}.topbar{height:78px;padding:0 22px}.brand small{font-size:.74rem}.brand h1{font-size:1.62rem;margin-top:4px}.layout{min-height:calc(100vh - 78px)}.main{padding:16px 18px 28px}.screen-title h2{font-size:1.5rem}.screen-title p{font-size:.88rem;color:#b3c6df}.badge{font-size:.78rem}.kpi{min-height:88px}.kpi label{font-size:.72rem;color:#b4c6df}.kpi strong{font-size:1.55rem;margin-top:11px}.kpi small{font-size:.72rem;color:#91a9ca}.panel-title{height:42px;font-size:.8rem}.barrow{font-size:.78rem;grid-template-columns:minmax(170px,230px) 1fr 60px}.track{height:20px}.actual{height:10px;top:5px}.legend{font-size:.74rem}.state-box span{font-size:.82rem}.state-box b{font-size:1.45rem}.portfolio-note{font-size:.75rem}.work-head h3{font-size:.86rem}.state-pill{font-size:.64rem;padding:4px 7px}.ring{width:64px;height:64px}.ring:after{width:47px;height:47px}.ring b{font-size:.78rem}.work-data{font-size:.75rem;line-height:1.65}.physical div{font-size:.67rem;line-height:1.25}.physical b{font-size:.74rem}.completed-bar{font-size:.76rem}.done-card h3{font-size:.88rem}.done-card p{font-size:.73rem}.big-number span{font-size:.74rem}.action.fullscreen{background:#275078;border-color:#4d83ad}.action.fullscreen:focus-visible,.nav-button:focus-visible,.sidebar-toggle:focus-visible{outline:3px solid #72ddef;outline-offset:2px}
+
+    @media(min-width:1200px) and (min-height:750px){.app{height:auto;min-height:100vh;overflow:visible}.layout{height:auto;min-height:calc(100vh - 78px)}.main{overflow:visible}.screen.active{height:auto;min-height:calc(100vh - 110px);overflow:visible}.work-grid{height:auto;grid-template-rows:none}.completed-cards{height:auto;grid-template-rows:none}}
+
+    @media(max-width:1450px) and (min-width:1101px){.work-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.completed-cards{grid-template-columns:repeat(3,minmax(0,1fr))}.kpis{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-main{grid-template-columns:minmax(0,2fr) minmax(250px,.72fr)}}
+
+    @media(max-width:1100px){.topbar{height:auto;min-height:78px}.main{padding:14px}.screen-title h2{font-size:1.35rem}.work-grid,.completed-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+    @media(max-width:700px){.topbar{display:block}.brand{margin-bottom:12px}.top-actions{justify-content:flex-start}.date{width:auto;text-align:left}.action.fullscreen{display:none}.kpi strong{font-size:1.35rem}.work-grid,.completed-cards{grid-template-columns:1fr}.barrow{grid-template-columns:105px 1fr 54px;font-size:.72rem}.physical{grid-template-columns:1fr}.screen-title{align-items:flex-start}}
+
+    /* Contratista visible en cada tarjeta individual de obra. */
+
+    .work-title{min-width:0}.work-contractor{margin-top:4px;color:#78d9ea;font-size:.68rem;font-weight:800;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.work-head{align-items:flex-start}.work-card{min-height:154px}.work-body{margin:7px 0}
+
+    /* Mayor superficie para el comparativo e identificación de contratistas. */
+
+    :root{--green:#22c55e;--orange:#f59e0b;--red:#ef4444}.grid-main{grid-template-columns:minmax(0,5fr) minmax(245px,1fr)}.barrow{grid-template-columns:minmax(180px,250px) minmax(130px,210px) minmax(240px,1fr) 60px}.bar-contractor{color:#c4b5fd;font-size:.72rem;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-left:1px solid #594d83;padding-left:10px}.track{background:#223552}.plan{background:#38bdf8;opacity:.82}.actual{height:10px;top:5px;box-shadow:0 0 0 1px #081321}.ring{background:conic-gradient(var(--state) calc(var(--p)*1%),#2a3d5b 0)}
+
+    #execution .kpi:nth-child(1){--accent:#a78bfa}#execution .kpi:nth-child(2){--accent:#14b8a6}#execution .kpi:nth-child(3){--accent:#2563eb}#execution .kpi:nth-child(4){--accent:#38bdf8}#execution .kpi:nth-child(5){--accent:#f472b6}#execution .kpi:nth-child(6){--accent:#fbbf24}
+
+    #completed .kpi:nth-child(1){--accent:#2563eb}#completed .kpi:nth-child(2){--accent:#38bdf8}#completed .kpi:nth-child(3){--accent:#fbbf24}#completed .kpi:nth-child(4){--accent:#a78bfa}#completed .kpi:nth-child(5){--accent:#14b8a6}#completed .kpi:nth-child(6){--accent:#64748b}.completed-track span{background:linear-gradient(90deg,#d99a16,#fbbf24)}.done-card{border-left-color:#fbbf24}.done-card:after{color:#fbbf24}.work-contractor{color:#c4b5fd}
+
+    @media(max-width:1450px) and (min-width:1101px){.grid-main{grid-template-columns:minmax(0,4.5fr) minmax(220px,1fr)}.barrow{grid-template-columns:minmax(150px,210px) minmax(115px,170px) minmax(190px,1fr) 55px}}
+
+    @media(max-width:700px){.barrow{grid-template-columns:minmax(100px,1fr) minmax(95px,1fr) 2fr 48px}.bar-contractor{font-size:.65rem;padding-left:6px}}
+
+    @media print{.work-contractor{font-size:9pt;margin-top:2mm}}
+
+  .production-average{margin-top:7px;padding:7px 9px;border-radius:5px;background:#203a55;display:flex;flex-wrap:wrap;align-items:center;gap:3px 10px}.production-average span{font-size:11px;color:#b7cbe0}.production-average b{font-size:13px;color:#72dce8}.production-average small{flex-basis:100%;font-size:10px;color:#b7cbe0}@media print{.production-average{break-inside:avoid}}
+
+.work-dates{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:7px;padding:7px 9px;border-top:1px solid #38516b;font-size:11px;color:#b7cbe0}.work-dates b{display:block;margin-top:3px;color:#fff;font-size:13px}@media print{.work-dates{break-inside:avoid}}
+
+.work-dates small{display:block;margin-top:3px;font-size:10px;color:#b7cbe0}
+
+
+
+/* Selector compacto y ancho útil completo en celulares. */
+
+@media screen {
+
+ .layout{display:block;min-height:0}.sidebar{display:none!important}
+
+ .mobile-screen-select{display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:15;background:#101c32;border-bottom:1px solid #355174;padding:9px 12px}
+
+ .mobile-screen-select label{font-size:12px;color:#a7b8d1;font-weight:700}
+
+ .mobile-screen-select select{flex:1;min-width:0;min-height:44px;padding:9px 12px;border:1px solid #4d7198;border-radius:8px;background:#203758;color:#fff;font:700 16px Arial,sans-serif}
+
+ .mobile-screen-select select:focus-visible{outline:3px solid #72ddef;outline-offset:2px}
+
+ .main{min-width:0;overflow:visible!important}.screen.active{height:auto;min-height:0;overflow:visible}.app{height:auto;min-height:100dvh;overflow:visible}
+
+}
+
+@media screen and (max-width:700px){
+
+ .topbar{padding:14px 12px;min-height:0;height:auto;display:block}.brand{margin-bottom:10px}.brand small{font-size:10px;letter-spacing:.08em}.brand h1{font-size:20px;line-height:1.25}.top-actions{display:flex;flex-wrap:wrap;gap:7px}.date{flex-basis:100%;font-size:12px;margin:0}.action{min-height:44px;font-size:12px;padding:9px 11px}.action.fullscreen{display:none}
+
+ .main{width:100%;padding:12px 10px 24px}.screen-title{gap:8px;align-items:flex-start}.screen-title h2{font-size:18px;line-height:1.3}.screen-title p{font-size:12px;line-height:1.5}.badge{white-space:nowrap;font-size:11px;padding:6px 8px}
+
+ .kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.kpi{padding:11px;min-height:96px}.kpi label{font-size:10px;line-height:1.4}.kpi strong{font-size:21px;margin-top:10px;overflow-wrap:anywhere}.kpi small{font-size:11px}
+
+ .grid-main,.completed-hero{grid-template-columns:minmax(0,1fr);gap:10px}.panel-title{height:auto;min-height:44px;padding:10px;flex-wrap:wrap;gap:8px;line-height:1.4;font-size:11px}.legend{font-size:10px;gap:10px}.bars{padding:12px;gap:14px}
+
+ .barrow{grid-template-columns:minmax(0,1fr) auto;gap:5px 8px;font-size:12px}.bar-name{grid-column:1/-1;white-space:normal;line-height:1.4;font-weight:700}.bar-contractor{grid-column:1/-1;border:0;padding:0;white-space:normal;font-size:11px;line-height:1.4}.barrow .track{grid-column:1;height:20px;margin-top:2px}.barrow>b{grid-column:2;font-size:12px}
+
+ .state-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:10px}.state-box{display:block;text-align:center;padding:10px 5px}.state-box span{font-size:10px}.state-box b{display:block;margin-top:6px;font-size:24px}.portfolio-note{font-size:11px}
+
+ .work-grid,.completed-cards{grid-template-columns:minmax(0,1fr);height:auto;grid-template-rows:none;gap:12px}.work-card,.done-card{padding:15px;min-width:0}.work-head{flex-wrap:wrap;gap:8px}.work-title{flex:1;min-width:150px}.work-head h3,.done-card h3{font-size:15px;line-height:1.4}.work-contractor{white-space:normal;overflow:visible;font-size:12px;line-height:1.4}.state-pill{font-size:10px;align-self:flex-start}.work-body{gap:18px;margin:14px 0}.work-data{font-size:13px;line-height:1.7}.ring{width:76px;height:76px}.ring:after{width:56px;height:56px}.ring b{font-size:13px}.physical{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.physical div{padding:9px;font-size:11px;line-height:1.4}.physical div:last-child{grid-column:1/-1}.physical b{font-size:13px}.production-average{padding:10px;margin-top:10px}.production-average span{font-size:12px}.production-average b{font-size:14px}.production-average small{font-size:11px;line-height:1.5}.work-dates{line-height:1.4;padding:10px 0 0;gap:10px 8px}.work-dates b{font-size:13px}
+
+ .completed-summary{padding:16px 10px;gap:10px;flex-wrap:wrap}.big-number strong{font-size:30px}.completed-bar{grid-template-columns:minmax(0,1fr) 60px;gap:5px;font-size:12px}.completed-bar>span{grid-column:1/-1;line-height:1.4}.completed-bar .completed-track{grid-column:1}.completed-bar>b{grid-column:2}.done-card p{font-size:12px;line-height:1.5}.done-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+
+ .tablewrap{max-width:100%;overflow:auto;max-height:none}.table-panel{max-width:100%}
+
+}
+
+@media print{.mobile-screen-select{display:none!important}}
+
+
+
+.modal{overflow-y:auto}.dialog{max-height:calc(100dvh - 36px);overflow-y:auto}.dialog input{font-size:16px;min-height:44px}.dialog input[type=file]{width:100%;padding:10px 8px;font-size:13px}.dialog input::file-selector-button{background:#315d86;color:white;border:0;border-radius:5px;padding:9px 8px;margin-right:7px}.file-help{font-size:12px;line-height:1.5}.dialog-actions button{min-height:44px}.confirm:disabled{opacity:.6;cursor:wait}@media(max-width:500px){.dialog{padding:18px}.dialog h2{font-size:20px}.dialog p{font-size:13px}.dialog-actions{flex-wrap:wrap}.dialog-actions button{flex:1}.dialog label{font-size:12px}}
+
+
+.install-banner{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 14px;background:linear-gradient(90deg,#0f294a,#133a63);border-bottom:1px solid #38bdf8;color:#eaf2ff}
+.install-banner.hidden{display:none!important}
+.install-banner-left{display:flex;align-items:center;gap:10px;min-width:0}
+.install-banner-left img{width:38px;height:38px;border-radius:9px;flex-shrink:0;border:1px solid #57d1e6}
+.install-banner-text{font-size:13px;font-weight:800;line-height:1.25}
+.install-banner-text span{display:block;font-size:11px;color:#93c5fd;font-weight:500;margin-top:2px}
+.install-banner-actions{display:flex;gap:7px;flex-shrink:0}
+.install-btn{border:0;border-radius:8px;padding:9px 12px;font:800 12px Inter,Arial,sans-serif;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:4px;color:#fff}
+.install-btn.apk{background:#10b981}
+.install-btn.pwa{background:#0284c7}
+.sync-toast{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:#065f46;color:#ecfdf5;border:1px solid #34d399;padding:10px 16px;border-radius:999px;font-size:12px;font-weight:800;box-shadow:0 8px 25px #000a;z-index:50;opacity:0;pointer-events:none;transition:opacity .25s ease}
+.sync-toast.show{opacity:1}
+@media print{.install-banner,.sync-toast{display:none!important}}
+</style>
+
+</head>
+
+<body>
+
+<div class="app">
+  <div class="install-banner" id="installBanner">
+    <div class="install-banner-left">
+      <img src="./icon-192.png" alt="AUBASA">
+      <div class="install-banner-text">App Android · Gerencia de Obras AUBASA<span>Instalala en tu teléfono para acceso directo</span></div>
+    </div>
+    <div class="install-banner-actions">
+      <a href="./Tablero_Obras_AUBASA.apk" download="Tablero_Obras_AUBASA.apk" class="install-btn apk">📦 Bajar APK</a>
+      <button type="button" id="pwaInstallBtn" class="install-btn pwa">📲 Instalar</button>
+    </div>
+  </div>
+  <div class="sync-toast" id="syncToast">✓ Datos sincronizados</div>
+
+  <header class="topbar"><div class="brand"><small>AUBASA · GERENCIA DE INGENIERÍA Y OBRAS</small><h1>Gestión integral de la cartera de obras</h1></div><div class="top-actions"><span class="date" id="cut">Corte: —</span><button class="action fullscreen" id="fullscreen" type="button">Pantalla completa</button><button class="action update" id="linkedUpdate">Actualizar datos</button><button class="action print" id="printPdf">Imprimir PDF A1</button></div></header>
+
+  <div class="layout">
+
+
+
+    <div class="mobile-screen-select"><label for="mobileScreen">Ver</label><select id="mobileScreen" aria-label="Seleccionar pantalla de obras"><option value="execution">Obras en ejecución</option><option value="completed">Obras ejecutadas</option></select></div>
+
+    <main class="main">
+
+      <section class="screen active" id="execution">
+
+        <div class="screen-title"><div><h2>Obras en ejecución · control estratégico</h2><p>Inversión, avance contra PdT, plazo y producción física de la cartera activa</p></div><span class="badge" id="executionBadge">— obras</span></div>
+
+        <div class="kpis"><div class="kpi"><label>Monto contractual</label><strong id="contractTotal">—</strong><small>Cartera activa</small></div><div class="kpi" style="--accent:#42c18b"><label>Monto ejecutado</label><strong id="spentTotal">—</strong><small>Acumulado</small></div><div class="kpi"><label>Avance ejecutado</label><strong id="progress">—</strong><small>Ponderado</small></div><div class="kpi" style="--accent:#f0a35a"><label>Avance previsto</label><strong id="planned">—</strong><small>PdT aprobado</small></div><div class="kpi" style="--accent:#57d1e6"><label>Desvío vs. PdT</label><strong id="delta">—</strong><small>Puntos porcentuales</small></div><div class="kpi" style="--accent:#9d7bea"><label>Mezcla colocada</label><strong id="tonsPlaced">—</strong><small>Toneladas</small></div></div>
+
+        <div class="grid-main"><section class="panel"><div class="panel-title">Avance ejecutado vs. previsto PdT <div class="legend"><span><i style="background:linear-gradient(90deg,#22c55e,#f59e0b,#ef4444)"></i>Ejecutado</span><span><i style="background:#38bdf8"></i>Previsto PdT</span></div></div><div class="bars" id="bars"></div></section><section class="panel"><div class="panel-title">Estado de cartera</div><div class="state-list" id="states"></div><p class="portfolio-note">Clasificación económica con margen de ±3 puntos porcentuales respecto del PdT.</p></section></div>
+
+        <section class="work-grid" id="workGrid"></section>
+
+        <section class="panel table-panel"><div class="panel-title">Detalle de contratos <span>Montos y producción</span></div><div class="tablewrap"><table><thead><tr><th>Obra</th><th>Contratista</th><th class="num">Contrato $MM</th><th class="num">Real</th><th class="num">PdT</th><th class="num">Plazo</th><th class="num">Tn prev.</th><th class="num">Tn ejec.</th><th class="num">Km tramo</th><th>Estado</th></tr></thead><tbody id="executionRows"></tbody></table></div></section>
+
+      </section>
+
+      <section class="screen" id="completed">
+
+        <div class="screen-title"><div><h2>Obras ejecutadas · impacto acumulado</h2><p>Producción histórica, cumplimiento físico y alcance de las intervenciones finalizadas</p></div><span class="badge" id="completedBadge">— obras</span></div>
+
+        <div class="kpis"><div class="kpi"><label>Obras finalizadas</label><strong id="doneCount">—</strong><small>Antecedentes</small></div><div class="kpi" style="--accent:#42c18b"><label>Mezcla prevista</label><strong id="doneTonsPlan">—</strong><small>Toneladas informadas</small></div><div class="kpi"><label>Mezcla colocada</label><strong id="doneTonsPlaced">—</strong><small>Toneladas ejecutadas</small></div><div class="kpi" style="--accent:#57d1e6"><label>Longitud intervenida</label><strong id="doneKm">—</strong><small>Kilómetros</small></div><div class="kpi" style="--accent:#f0a35a"><label>Cumplimiento mezcla</label><strong id="doneRatio">—</strong><small>Colocada / prevista</small></div><div class="kpi" style="--accent:#9d7bea"><label>Con datos físicos</label><strong id="doneWithData">—</strong><small>Obras informadas</small></div></div>
+
+        <div class="completed-hero"><section class="panel"><div class="panel-title">Producción histórica</div><div class="completed-summary"><div class="big-number"><strong id="histTons">—</strong><span>toneladas colocadas</span></div><div class="big-number"><strong id="histKm">—</strong><span>kilómetros intervenidos</span></div></div></section><section class="panel"><div class="panel-title">Mezcla colocada por obra</div><div class="completed-bars" id="completedBars"></div></section></div>
+
+        <section class="completed-cards" id="completedCards"></section>
+
+        <section class="panel table-panel"><div class="panel-title">Detalle de obras ejecutadas</div><div class="tablewrap"><table><thead><tr><th>Obra</th><th>Contratista</th><th class="num">Tn previstas</th><th class="num">Tn colocadas</th><th class="num">Km intervenidos</th><th>Finalización</th></tr></thead><tbody id="completedRows"></tbody></table></div></section>
+
+      </section>
+
+    </main>
+
+  </div>
+
+</div>
+
+<div class="modal" id="updateModal"><div class="dialog" role="dialog" aria-modal="true" aria-labelledby="updateTitle"><h2 id="updateTitle">Actualizar datos</h2><p id="updateInstructions">Se utilizará el archivo Excel vinculado. Ingresá la clave para publicar los nuevos valores.</p><label for="updateFile">Archivo TABLERO DE CONTROL (.xlsx)</label><input id="updateFile" type="file" accept=".xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"><p class="file-help">Elegí el Excel desde Archivos o desde OneDrive si está disponible en el selector del teléfono. Se publicarán los datos de ese archivo.</p><label for="updateKey">Clave de actualización</label><input id="updateKey" type="password" autocomplete="current-password"><p class="message" id="updateMessage"></p><div class="dialog-actions"><button class="cancel" id="cancelUpdate">Cancelar</button><button class="confirm" id="confirmUpdate">Procesar y publicar</button></div></div></div>
+
+<script>
+const FALLBACK_DATA = {"modificado": "2026-10-28", "obras": [{"id": "9", "nombre": "AUTOVÍA N°2 ASCENDENTE", "tramo": "KM 203 (DOLORES) A KM 273 (MAIPÚ) ETAPA 1", "corto": "KM 203 (DOLORES) A KM 273 (MAIPÚ) ETAPA 1", "contratista": "CONCRETNOR-MARCALBA", "contrato": 19084903133.419994, "ejecutado": 18075811137.49, "previsto": 13392647300.525045, "fin": "2027-04-07", "plazo": 0.7, "toneladas_previstas": 109205.63968, "toneladas_colocadas": 106661.14359999998, "longitud_total_m": 70370.0, "longitud_intervenida_m": 70370.0, "plazo_contrato_dias": 540, "dias_corridos_consumidos": 378, "plazo_corte": "2026-10-28", "inicio": "2025-10-15", "fin_prevista": "2027-04-07", "produccion_efectiva": {"toneladas": 106661.1436, "dias": 163, "corte": "2026-10-27", "promedio": 654.3628441717791}}, {"id": "10", "nombre": "AUTOVÍA N°2 DESCENDENTE", "tramo": "KM 273 (MAIPÚ) A KM 203 (DOLORES) ETAPA 1", "corto": "KM 273 (MAIPÚ) A KM 203 (DOLORES) ETAPA 1", "contratista": "POSE-COARCO UT", "contrato": 18864639802.9, "ejecutado": 18275496337.09, "previsto": 15524462850.802803, "fin": "2027-03-15", "plazo": 0.7311411992263056, "toneladas_previstas": 104346.45799999998, "toneladas_colocadas": 103955.47775999997, "longitud_total_m": 70370.0, "longitud_intervenida_m": 70370.0, "plazo_contrato_dias": 517, "dias_corridos_consumidos": 378, "plazo_corte": "2026-10-28", "inicio": "2025-10-15", "fin_prevista": "2027-03-15", "produccion_efectiva": {"toneladas": 103955.47776000001, "dias": 182, "corte": "2026-10-26", "promedio": 571.1839437362638}}, {"id": "11", "nombre": "AUTOPISTA BS AS - LA PLATA", "tramo": "4TO CARRIL + REPAV. KM 11,4 A KM 20,0 CALZ. ASCEN.", "corto": "4TO CARRIL + REPAV. KM 11,4 A KM 20,0 CALZ. ASCEN.", "contratista": "KAVOS S.A. - C&E UT", "contrato": 8877909055.61, "ejecutado": 8650537491.869999, "previsto": 8643229460.405582, "fin": "2026-11-02", "plazo": 0.9833333333333333, "toneladas_previstas": 41927.89952, "toneladas_colocadas": 38935.53600000001, "longitud_total_m": 8500.0, "longitud_intervenida_m": 8214.694768794061, "plazo_contrato_dias": 360, "dias_corridos_consumidos": 354, "plazo_corte": "2026-10-28", "inicio": "2025-11-08", "fin_prevista": "2026-11-02", "produccion_efectiva": {"toneladas": 38935.53600000001, "dias": 122, "corte": "2026-10-26", "promedio": 319.14373770491807}}, {"id": "12", "nombre": "AUTOPISTA BS AS - LA PLATA", "tramo": "4TO CARRIL + REPAV. KM 20,0 A KM 30,42 CALZ. ASC.", "corto": "4TO CARRIL + REPAV. KM 20,0 A KM 30,42 CALZ. ASC.", "contratista": "BRIALES - PELQUE UT", "contrato": 12487146809.430002, "ejecutado": 12139124676.280003, "previsto": 8134198433.305072, "fin": "2027-03-03", "plazo": 0.7177777777777777, "toneladas_previstas": 53307.15424, "toneladas_colocadas": 57350.473999999995, "longitud_total_m": 10420.0, "longitud_intervenida_m": 10371.014953812342, "plazo_contrato_dias": 450, "dias_corridos_consumidos": 323, "plazo_corte": "2026-10-28", "inicio": "2025-12-09", "fin_prevista": "2027-03-03", "produccion_efectiva": {"toneladas": 57350.474, "dias": 135, "corte": "2026-10-27", "promedio": 424.81832592592593}}, {"id": "15 R1", "nombre": "AUTOPISTA BS AS - LA PLATA", "tramo": "CONEXIÓN CITY BELL - RENGLÓN 1 (Autopista)", "corto": "CONEXIÓN CITY BELL - RENGLÓN 1 (Autopista)", "contratista": "CPC S.A.", "contrato": 15867544909.520004, "ejecutado": 4304508857.01, "previsto": 4282197588.138276, "fin": "2027-08-13", "plazo": 0.46296296296296297, "toneladas_previstas": 10324.0608, "toneladas_colocadas": 0.0, "longitud_total_m": 2120.0, "longitud_intervenida_m": 0.0, "plazo_contrato_dias": 540, "dias_corridos_consumidos": 250, "plazo_corte": "2026-10-28", "inicio": "2026-02-20", "fin_prevista": "2027-08-13", "produccion_efectiva": {"toneladas": 0, "dias": 0, "corte": "2026-10-26", "promedio": null}}, {"id": "15 R2", "nombre": "AUTOPISTA BS AS - LA PLATA", "tramo": "CONEXIÓN CITY BELL - RENGLÓN 2 (Centenario)", "corto": "CONEXIÓN CITY BELL - RENGLÓN 2 (Centenario)", "contratista": "OCSA S.A.", "contrato": 9660000000.04, "ejecutado": 3986991535.3300004, "previsto": 3072930680.4742002, "fin": "2027-08-13", "plazo": 0.46296296296296297, "toneladas_previstas": 3462.6971999999996, "toneladas_colocadas": 0.0, "longitud_total_m": 780.0, "longitud_intervenida_m": 0.0, "plazo_contrato_dias": 540, "dias_corridos_consumidos": 250, "plazo_corte": "2026-10-28", "inicio": "2026-02-20", "fin_prevista": "2027-08-13", "produccion_efectiva": {"toneladas": 0, "dias": 0, "corte": "2026-10-27", "promedio": null}}, {"id": "13", "nombre": "AUTOVÍA N°2 DESCENDENTE", "tramo": "KM 340 (CNEL. VIDAL) A KM 273 (MAIPÚ) ETAPA 2", "corto": "KM 340 (CNEL. VIDAL) A KM 273 (MAIPÚ) ETAPA 2", "contratista": "FONTANA-LUCIANO UT", "contrato": 19060774212.149998, "ejecutado": 6449560125.65, "previsto": 6085208562.409691, "fin": "2027-07-31", "plazo": 0.3844444444444444, "toneladas_previstas": 97182.03160000002, "toneladas_colocadas": 31455.643199999995, "longitud_total_m": 66630.0, "longitud_intervenida_m": 20752.5294565292, "plazo_contrato_dias": 450, "dias_corridos_consumidos": 173, "plazo_corte": "2026-10-28", "inicio": "2026-05-08", "fin_prevista": "2027-07-31", "produccion_efectiva": {"toneladas": 32607.7848, "dias": 77, "corte": "2026-10-26", "promedio": 423.4777246753247}}, {"id": "14", "nombre": "AUTOVÍA N°2 ASCENDENTE", "tramo": "KM 273 (MAIPÚ) A KM 340 (CNEL. VIDAL) ETAPA 2", "corto": "KM 273 (MAIPÚ) A KM 340 (CNEL. VIDAL) ETAPA 2", "contratista": "VIAL AGRO", "contrato": 24032992675.16, "ejecutado": 9694454516.46, "previsto": 10244282004.929678, "fin": "2027-09-13", "plazo": 0.40555555555555556, "toneladas_previstas": 124714.5524, "toneladas_colocadas": 50693.1624, "longitud_total_m": 66630.0, "longitud_intervenida_m": 26329.64243559777, "plazo_contrato_dias": 540, "dias_corridos_consumidos": 219, "plazo_corte": "2026-10-28", "inicio": "2026-03-23", "fin_prevista": "2027-09-13", "produccion_efectiva": {"toneladas": 52275.1728, "dias": 104, "corte": "2026-10-27", "promedio": 502.6458923076923}}, {"id": "16", "nombre": "AUTOPISTA BS AS - LA PLATA", "tramo": "VIADUCTO  /  C. DESCENDENTE", "corto": "VIADUCTO / C. DESCENDENTE", "contratista": "FONTANA NICASTRO", "contrato": 6168487211.29, "ejecutado": 4083625542.48, "previsto": 2059750299.5488117, "fin": "2027-02-14", "plazo": 0.5925925925925926, "toneladas_previstas": 24900.177200000002, "toneladas_colocadas": 15081.9436, "longitud_total_m": 7944.0, "longitud_intervenida_m": 3973.393297118774, "plazo_contrato_dias": 270, "dias_corridos_consumidos": 160, "plazo_corte": "2026-10-28", "inicio": "2026-05-21", "fin_prevista": "2027-02-14", "produccion_efectiva": {"toneladas": 15081.9436, "dias": 82, "corte": "2026-10-27", "promedio": 183.92614146341464}}, {"id": "17", "nombre": "RP N°11 DESCENDENTE", "tramo": "KM 250 (CONESA) A KM 225 (ESQ. CROTTO)", "corto": "KM 250 (CONESA) A KM 225 (ESQ. CROTTO)", "contratista": "MARCALBA", "contrato": 11981882529.25, "ejecutado": 6619898394.249999, "previsto": 3982873349.3700247, "fin": "2027-06-06", "plazo": 0.38333333333333336, "toneladas_previstas": 43366.584, "toneladas_colocadas": 23287.695359999998, "longitud_total_m": 25000.0, "longitud_intervenida_m": 11792.301297505941, "plazo_contrato_dias": 360, "dias_corridos_consumidos": 138, "plazo_corte": "2026-10-28", "inicio": "2026-06-12", "fin_prevista": "2027-06-06", "produccion_efectiva": {"toneladas": 30800.299199999998, "dias": 73, "corte": "2026-10-26", "promedio": 421.92190684931506}}, {"id": "18", "nombre": "RP N°11 ASCENDENTE", "tramo": "KM 225 (ESQ. CROTTO) A KM 250 (CONESA)", "corto": "KM 225 (ESQ. CROTTO) A KM 250 (CONESA)", "contratista": "POSE", "contrato": 10895985337.449999, "ejecutado": 3626546792.2300005, "previsto": 1528782806.2301786, "fin": "2027-05-06", "plazo": 0.4212121212121212, "toneladas_previstas": 53320.78199999999, "toneladas_colocadas": 18833.91712, "longitud_total_m": 25000.0, "longitud_intervenida_m": 10098.504834000027, "plazo_contrato_dias": 330, "dias_corridos_consumidos": 139, "plazo_corte": "2026-10-28", "inicio": "2026-06-11", "fin_prevista": "2027-05-06", "produccion_efectiva": {"toneladas": 18833.91712, "dias": 54, "corte": "2026-10-25", "promedio": 348.77624296296295}}, {"id": "19", "nombre": "AUTOPISTA BS AS - LA PLATA", "tramo": "DISTRIBUIDOR DIAGONAL 74", "corto": "DISTRIBUIDOR DIAGONAL 74", "contratista": "PELQUE", "contrato": 3324952614.45, "ejecutado": 700204147.3799999, "previsto": 700204147.3869998, "fin": "2027-02-01", "plazo": 0.46111111111111114, "toneladas_previstas": 17112.8528, "toneladas_colocadas": 3883.896, "longitud_total_m": null, "longitud_intervenida_m": null, "plazo_contrato_dias": 180, "dias_corridos_consumidos": 83, "plazo_corte": "2026-10-28", "inicio": "2026-08-06", "fin_prevista": "2027-02-01", "produccion_efectiva": {"toneladas": 1294.632, "dias": 4, "corte": "2026-10-26", "promedio": 323.658}}], "terminadas": [{"id": "1", "nombre": "AUTOPISTA BS AS - LA PLATA", "tramo": "CONEXIÓN URBANA AV. 520", "contratista": "PELQUE - BRIALES ut", "fin": "2024-11-01", "toneladas_previstas": null, "toneladas_colocadas": null, "longitud_total_m": null, "longitud_intervenida_m": null, "plazo_contrato_dias": null, "dias_corridos_consumidos": null, "plazo_corte": "2026-10-28", "inicio": null, "fin_prevista": "2024-11-01", "produccion_efectiva": {"toneladas": 0, "dias": 0, "corte": "2026-10-28", "promedio": null}}, {"id": "2", "nombre": "AUTOPISTA BS AS - LA PLATA", "tramo": "HIDRÁULICA ETAPA 2 AV. 520", "contratista": "CAVEXE ING Y CONST", "fin": "1900-02-18", "toneladas_previstas": null, "toneladas_colocadas": null, "longitud_total_m": null, "longitud_intervenida_m": null, "plazo_contrato_dias": 176, "dias_corridos_consumidos": null, "plazo_corte": "2026-10-28", "inicio": null, "fin_prevista": "1900-02-18", "produccion_efectiva": {"toneladas": 0, "dias": 0, "corte": "2026-10-28", "promedio": null}}, {"id": "3", "nombre": "AUTOPISTA BS AS - LA PLATA", "tramo": "RAMAL GUTIERREZ  /  C. DESCENDENTE", "contratista": "KAVOS S.A.", "fin": "2025-06-14", "toneladas_previstas": 4689.129999999999, "toneladas_colocadas": 4689.129999999999, "longitud_total_m": 7691.0, "longitud_intervenida_m": 7691.0, "plazo_contrato_dias": 226, "dias_corridos_consumidos": 226, "plazo_corte": "2026-10-28", "inicio": "2024-11-01", "fin_prevista": "2025-06-14", "produccion_efectiva": {"toneladas": 16601.8876, "dias": 95, "corte": "2026-10-28", "promedio": 174.75671157894735}}, {"id": "4", "nombre": "AUTOPISTA BS AS - LA PLATA", "tramo": "LA PLATA - HUDSON  /  C. DESCENDENTE", "contratista": "FONTANA", "fin": "2025-12-02", "toneladas_previstas": 8380.73, "toneladas_colocadas": 6693.549999999998, "longitud_total_m": 20453.0, "longitud_intervenida_m": 20453.0, "plazo_contrato_dias": 270, "dias_corridos_consumidos": 600, "plazo_corte": "2026-10-28", "inicio": "2025-03-07", "fin_prevista": "2025-12-02", "produccion_efectiva": {"toneladas": 31940.9032, "dias": 119, "corte": "2025-12-17", "promedio": 268.4109512605042}}, {"id": "5", "nombre": "AUTOPISTA BS AS - LA PLATA", "tramo": "HUDSON - LA PLATA  /  C. ASCENDENTE", "contratista": "AVINCO-AUTOVÍA", "fin": "2026-01-20", "toneladas_previstas": 14524.410000000003, "toneladas_colocadas": 17620.989999999998, "longitud_total_m": 20453.0, "longitud_intervenida_m": 20453.0, "plazo_contrato_dias": 330, "dias_corridos_consumidos": 611, "plazo_corte": "2026-10-28", "inicio": "2025-02-24", "fin_prevista": "2026-01-20", "produccion_efectiva": {"toneladas": 54949.30432, "dias": 161, "corte": "2026-10-28", "promedio": 341.30002683229816}}, {"id": "6", "nombre": "AUTOPISTA BS AS - LA PLATA", "tramo": "VIADUCTO  /  C. ASCENDENTE", "contratista": "KAVOS-C&E", "fin": "2025-12-31", "toneladas_previstas": 4691.579999999999, "toneladas_colocadas": 4223.319999999999, "longitud_total_m": 7800.0, "longitud_intervenida_m": 7800.0, "plazo_contrato_dias": 266, "dias_corridos_consumidos": 566, "plazo_corte": "2026-10-28", "inicio": "2025-04-10", "fin_prevista": "2025-12-31", "produccion_efectiva": {"toneladas": 23947.0804, "dias": 107, "corte": "2025-12-30", "promedio": 223.80448971962616}}, {"id": "7", "nombre": "RUTA PROVINCIAL N°63", "tramo": "DOLORES - CROTTO  /  C. ASCENDENTE", "contratista": "MARCALBA", "fin": "2025-08-29", "toneladas_previstas": 1304.77, "toneladas_colocadas": 934.8, "longitud_total_m": 5900.0, "longitud_intervenida_m": 5900.0, "plazo_contrato_dias": 150, "dias_corridos_consumidos": 150, "plazo_corte": "2026-10-28", "inicio": "2025-04-01", "fin_prevista": "2025-08-29", "produccion_efectiva": {"toneladas": 8726.064, "dias": 35, "corte": "2026-10-28", "promedio": 249.3161142857143}}, {"id": "8", "nombre": "RUTA PROVINCIAL N°63", "tramo": "CROTTO - DOLORES  /  C. DESCENDENTE ", "contratista": "MARCALBA", "fin": "2025-09-30", "toneladas_previstas": 2346.42, "toneladas_colocadas": 2924.9300000000003, "longitud_total_m": 11300.0, "longitud_intervenida_m": 11300.0, "plazo_contrato_dias": 138, "dias_corridos_consumidos": 531, "plazo_corte": "2026-10-28", "inicio": "2025-05-15", "fin_prevista": "2025-09-30", "produccion_efectiva": {"toneladas": 12315.104000000001, "dias": 42, "corte": "2026-10-28", "promedio": 293.21676190476194}}], "actualizado": "2026-10-28T13:57:08.649242+00:00"};
+const REMOTE_API = 'https://tablero-obras-aubasa-2026.wrefort.chatgpt.site/api/data';
+const pct=n=>Number.isFinite(n)?(n*100).toLocaleString('es-AR',{minimumFractionDigits:1,maximumFractionDigits:1})+' %':'—';
+const money=n=>Number.isFinite(n)?'$ '+(n/1e9).toLocaleString('es-AR',{minimumFractionDigits:1,maximumFractionDigits:1})+' mil M':'—';
+const mm=n=>Number.isFinite(n)?(n/1e6).toLocaleString('es-AR',{maximumFractionDigits:0}):'—';
+const qty=n=>Number.isFinite(n)?n.toLocaleString('es-AR',{maximumFractionDigits:0}):'—';
+const km=n=>Number.isFinite(n)?(n/1000).toLocaleString('es-AR',{minimumFractionDigits:1,maximumFractionDigits:1}):'—';
+const fmtDate=s=>s?new Date(s+'T12:00:00').toLocaleDateString('es-AR'):'—';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+function selectScreen(id){
+  document.querySelectorAll('.nav-button').forEach(b=>b.classList.toggle('active',b.dataset.screen===id));
+  document.querySelectorAll('.screen').forEach(s=>s.classList.toggle('active',s.id===id));
+  document.getElementById('mobileScreen').value=id;
+}
+document.querySelectorAll('.nav-button').forEach(b=>b.addEventListener('click',()=>selectScreen(b.dataset.screen)));
+document.getElementById('mobileScreen').addEventListener('change',e=>{
+  selectScreen(e.target.value);
+  document.querySelector('.mobile-screen-select').scrollIntoView({block:'start'});
+});
+
+document.getElementById('printPdf').addEventListener('click',()=>window.print());
+document.getElementById('fullscreen').addEventListener('click',async()=>{
+  try{
+    if(!document.fullscreenElement){
+      await document.documentElement.requestFullscreen();
+      document.getElementById('fullscreen').textContent='Salir de pantalla completa';
+    }else{
+      await document.exitFullscreen();
+      document.getElementById('fullscreen').textContent='Pantalla completa';
+    }
+  }catch{}
+});
+document.addEventListener('fullscreenchange',()=>{
+  if(!document.fullscreenElement)document.getElementById('fullscreen').textContent='Pantalla completa';
+});
+
+function showToast(txt){
+  const t=document.getElementById('syncToast');
+  if(!t)return;
+  t.textContent=txt;
+  t.classList.add('show');
+  clearTimeout(window._toastTimer);
+  window._toastTimer=setTimeout(()=>t.classList.remove('show'),3200);
+}
+
+function productionCard(w){
+  const a=w.produccion_efectiva;
+  const value=a&&a.dias>0&&Number.isFinite(a.promedio)?a.promedio.toLocaleString('es-AR',{maximumFractionDigits:1})+' tn/día efectivo':a&&a.dias===0?'Sin colocación':'Sin datos';
+  const note=a?'Corte '+fmtDate(a.corte)+' · '+qty(a.dias)+' días efectivos':'Requiere registros diarios';
+  return `<div class="production-average" title="Toneladas de la serie diaria divididas por días con colocación mayor que cero. Cada fecha cuenta una sola vez."><span>Promedio de colocación</span><b>${value}</b><small>${note}</small></div>`;
+}
+
+function state(w){
+  const d=(w.ejecutado-w.previsto)/w.contrato;
+  return d>.03?'Adelantada':d<-.03?'Atrasada':'En línea';
+}
+function stateColor(s){
+  return s==='Adelantada'?'#22c55e':s==='Atrasada'?'#ef4444':'#f59e0b';
+}
+
+function renderDashboard(d){
+  if(!d||!d.obras)return;
+  try{localStorage.setItem('aubasa_obras_cache',JSON.stringify(d))}catch{}
+  const works=d.obras||[],done=d.terminadas||[],C=works.reduce((a,w)=>a+w.contrato,0),E=works.reduce((a,w)=>a+w.ejecutado,0),P=works.reduce((a,w)=>a+w.previsto,0),tons=works.reduce((a,w)=>a+(Number(w.toneladas_colocadas)||0),0);
+  document.getElementById('cut').textContent='Corte: '+fmtDate(d.modificado);
+  document.getElementById('executionBadge').textContent=works.length+' obras';
+  document.getElementById('contractTotal').textContent=money(C);
+  document.getElementById('spentTotal').textContent=money(E);
+  document.getElementById('progress').textContent=pct(E/C);
+  document.getElementById('planned').textContent=pct(P/C);
+  document.getElementById('delta').textContent=((E-P)>=0?'+':'')+pct((E-P)/C);
+  document.getElementById('tonsPlaced').textContent=qty(tons);
+  document.getElementById('bars').innerHTML=[...works].sort((a,b)=>(a.inicio||'9999-12-31').localeCompare(b.inicio||'9999-12-31')).map(w=>`<div class="barrow"><div class="bar-name" title="${esc(w.corto)}">${esc(w.corto)}</div><div class="bar-contractor" title="${esc(w.contratista)}">${esc(w.contratista)}</div><div class="track"><div class="plan" style="width:${Math.min(100,w.previsto/w.contrato*100)}%"></div><div class="actual" data-state-color="${stateColor(state(w))}" style="background:${stateColor(state(w))};width:${Math.min(100,w.ejecutado/w.contrato*100)}%"></div></div><b>${pct(w.ejecutado/w.contrato)}</b></div>`).join('');
+  document.getElementById('states').innerHTML=[['Adelantada','good'],['En línea','line'],['Atrasada','bad']].map(([s,c])=>`<div class="state-box ${c}"><span>${s}</span><b>${works.filter(w=>state(w)===s).length}</b></div>`).join('');
+  document.getElementById('workGrid').innerHTML=works.map(w=>{const s=state(w),p=w.ejecutado/w.contrato,dv=(w.ejecutado-w.previsto)/w.contrato;return`<article class="work-card" style="--state:${stateColor(s)};--p:${Math.min(100,p*100)}"><div class="work-head"><div class="work-title"><h3>${esc(w.corto)}</h3><div class="work-contractor" title="${esc(w.contratista)}">Contratista: ${esc(w.contratista)}</div></div><span class="state-pill">${s.toUpperCase()}</span></div><div class="work-body"><div class="ring"><b>${pct(p)}</b></div><div class="work-data">PdT <b>${pct(w.previsto/w.contrato)}</b><br>Desvío <b>${dv>=0?'+':''}${pct(dv)}</b><br>Plazo <b>${pct(w.plazo)}</b></div></div><div class="physical"><div>Contrato<b>$ ${mm(w.contrato)} MM</b></div><div>Mezcla<b>${qty(w.toneladas_colocadas)} / ${qty(w.toneladas_previstas)} tn</b></div><div>Longitud<b>${km(w.longitud_intervenida_m)} / ${km(w.longitud_total_m)} km</b></div></div>${productionCard(w)}<div class="work-dates"><div>Acta de inicio<b>${fmtDate(w.inicio)}</b></div><div>Finalización prevista<b>${fmtDate(w.fin_prevista??w.fin)}</b></div><div title="Plazo total informado en el Excel, incluidas las ampliaciones registradas.">Plazo de contrato<b>${qty(w.plazo_contrato_dias)} días corridos</b></div><div title="Días corridos consumidos informados en el Excel a su fecha de corte.">Días corridos consumidos<b>${qty(w.dias_corridos_consumidos)} días</b><small>Corte: ${fmtDate(w.plazo_corte)}</small></div></div></article>`}).join('');
+  document.getElementById('executionRows').innerHTML=works.map(w=>{const s=state(w);return`<tr><td class="name">${esc(w.corto)}<small>${esc(w.tramo)}</small></td><td>${esc(w.contratista)}</td><td class="num">${mm(w.contrato)}</td><td class="num">${pct(w.ejecutado/w.contrato)}</td><td class="num">${pct(w.previsto/w.contrato)}</td><td class="num">${pct(w.plazo)}</td><td class="num">${qty(w.toneladas_previstas)}</td><td class="num">${qty(w.toneladas_colocadas)}</td><td class="num">${km(w.longitud_total_m)}</td><td style="color:${stateColor(s)}">${s}</td></tr>`}).join('');
+  const dp=done.reduce((a,w)=>a+(Number(w.toneladas_previstas)||0),0),de=done.reduce((a,w)=>a+(Number(w.toneladas_colocadas)||0),0),dkm=done.reduce((a,w)=>a+(Number(w.longitud_intervenida_m)||0),0),withData=done.filter(w=>Number.isFinite(w.toneladas_colocadas)).length;
+  document.getElementById('completedBadge').textContent=done.length+' obras';
+  document.getElementById('doneCount').textContent=done.length;
+  document.getElementById('doneTonsPlan').textContent=qty(dp);
+  document.getElementById('doneTonsPlaced').textContent=qty(de);
+  document.getElementById('doneKm').textContent=km(dkm);
+  document.getElementById('doneRatio').textContent=pct(de/dp);
+  document.getElementById('doneWithData').textContent=withData;
+  document.getElementById('histTons').textContent=qty(de);
+  document.getElementById('histKm').textContent=km(dkm);
+  const max=Math.max(...done.map(w=>Number(w.toneladas_colocadas)||0),1);
+  document.getElementById('completedBars').innerHTML=done.filter(w=>Number.isFinite(w.toneladas_colocadas)).map(w=>`<div class="completed-bar"><span>${esc(w.tramo)}</span><div class="completed-track"><span style="width:${w.toneladas_colocadas/max*100}%"></span></div><b>${qty(w.toneladas_colocadas)}</b></div>`).join('');
+  document.getElementById('completedCards').innerHTML=done.map(w=>`<article class="done-card"><h3>${esc(w.tramo)}</h3><p>${esc(w.contratista)}</p><div class="done-grid"><p>Mezcla prevista<b>${qty(w.toneladas_previstas)} tn</b></p><p>Mezcla colocada<b>${qty(w.toneladas_colocadas)} tn</b></p><p>Longitud<b>${km(w.longitud_intervenida_m)} km</b></p><p>Cumplimiento<b>${Number.isFinite(w.toneladas_previstas)&&w.toneladas_previstas?pct(w.toneladas_colocadas/w.toneladas_previstas):'—'}</b></p></div><p class="finish">Finalización: <b>${fmtDate(w.fin)}</b></p></article>`).join('');
+  document.getElementById('completedRows').innerHTML=done.map(w=>`<tr><td class="name">${esc(w.nombre)}<small>${esc(w.tramo)}</small></td><td>${esc(w.contratista)}</td><td class="num">${qty(w.toneladas_previstas)}</td><td class="num">${qty(w.toneladas_colocadas)}</td><td class="num">${km(w.longitud_intervenida_m)}</td><td>${fmtDate(w.fin)}</td></tr>`).join('');
+}
+
+async function syncLiveDashboard(showFeedback=false){
+  const btn=document.getElementById('linkedUpdate');
+  if(showFeedback&&btn)btn.textContent='Actualizando...';
+  const ts=Date.now();
+  const candidates=[];
+  try{
+    const r1=await fetch('./data.json?t='+ts,{cache:'no-store'});
+    if(r1.ok)candidates.push(await r1.json());
+  }catch{}
+  try{
+    const r2=await fetch(REMOTE_API+'?t='+ts,{cache:'no-store'});
+    if(r2.ok)candidates.push(await r2.json());
+  }catch{}
+  if(candidates.length){
+    candidates.sort((a,b)=>String(b.actualizado||b.modificado||'').localeCompare(String(a.actualizado||a.modificado||'')));
+    const best=candidates[0];
+    renderDashboard(best);
+    if(showFeedback)showToast('✓ Datos actualizados · Corte '+fmtDate(best.modificado));
+  }else{
+    if(showFeedback)showToast('Mostrando última copia sincronizada');
+  }
+  if(btn)btn.textContent='Actualizar datos';
+}
+
+// Render immediately from cache or fallback, then fetch live
+try{
+  const cached=JSON.parse(localStorage.getItem('aubasa_obras_cache')||'null');
+  renderDashboard(cached||FALLBACK_DATA);
+}catch{
+  renderDashboard(FALLBACK_DATA);
+}
+syncLiveDashboard(false);
+
+// Auto-refresh every 60s and when returning to app
+setInterval(()=>syncLiveDashboard(false),60000);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)syncLiveDashboard(false)});
+
+document.getElementById('linkedUpdate').addEventListener('click',async()=>{
+  if(/Windows/i.test(navigator.userAgent)){
+    const btn=document.getElementById('linkedUpdate');
+    btn.textContent='Sincronizando Excel...';
+    window.location.href='aubasa-sync://actualizar';
+    setTimeout(()=>syncLiveDashboard(true),8000);
+  }else{
+    await syncLiveDashboard(true);
+  }
+});
+
+// PWA Install Logic & Standalone detection
+const installBanner=document.getElementById('installBanner');
+const pwaInstallBtn=document.getElementById('pwaInstallBtn');
+let deferredPrompt=null;
+if(window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true){
+  installBanner.classList.add('hidden');
+}
+window.addEventListener('beforeinstallprompt',e=>{
+  e.preventDefault();
+  deferredPrompt=e;
+});
+pwaInstallBtn.addEventListener('click',async()=>{
+  if(deferredPrompt){
+    deferredPrompt.prompt();
+    const {outcome}=await deferredPrompt.userChoice;
+    if(outcome==='accepted')installBanner.classList.add('hidden');
+    deferredPrompt=null;
+  }else{
+    alert('Para instalar en Android: tocá el botón verde "📦 Bajar APK" o abrí el menú ⋮ de Chrome y elegí "Instalar aplicación".');
+  }
+});
+window.addEventListener('appinstalled',()=>installBanner.classList.add('hidden'));
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('./sw.js').catch(()=>{});
+}
+</script>
+
+<script>
+
+const barsNode=document.getElementById('bars'),cardsNode=document.getElementById('workGrid');
+
+new MutationObserver(()=>requestAnimationFrame(()=>{const colors=[...cardsNode.querySelectorAll('.work-card')].map(card=>card.style.getPropertyValue('--state'));barsNode.querySelectorAll('.barrow .actual').forEach((bar,i)=>{if(bar.dataset.stateColor||colors[i])bar.style.background=bar.dataset.stateColor||colors[i]})})).observe(cardsNode,{childList:true});
+
+</script>
+
+</body></html>
