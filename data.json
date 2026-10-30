@@ -1,6 +1,6 @@
 {
   "modificado": "2026-10-30",
-  "actualizado": "2026-10-30T14:57:41.715618+00:00",
+  "actualizado": "2026-10-30T15:04:00.975006+00:00",
   "obras": [
     {
       "id": "9",
@@ -117,8 +117,8 @@
       "corto": "CONEXIÓN CITY BELL - RENGLÓN 1 (Autopista)",
       "contratista": "CPC S.A.",
       "contrato": 15867544909.520004,
-      "ejecutado": 4314287223.84,
-      "previsto": 4291975954.966276,
+      "ejecutado": 4313908706.41,
+      "previsto": 4291597437.540676,
       "fin": "2027-08-13",
       "plazo": 0.4666666666666667,
       "toneladas_previstas": 10324.0608,
@@ -133,7 +133,7 @@
       "produccion_efectiva": {
         "toneladas": 0,
         "dias": 0,
-        "corte": "2026-10-28",
+        "corte": "2026-10-30",
         "promedio": null
       }
     },
