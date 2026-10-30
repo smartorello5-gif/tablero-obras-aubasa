@@ -1,6 +1,6 @@
 {
   "modificado": "2026-10-30",
-  "actualizado": "2026-10-30T13:39:40.981773+00:00",
+  "actualizado": "2026-10-30T14:18:27.736967+00:00",
   "obras": [
     {
       "id": "9",
@@ -171,24 +171,24 @@
       "corto": "KM 340 (CNEL. VIDAL) A KM 273 (MAIPÚ) ETAPA 2",
       "contratista": "FONTANA-LUCIANO UT",
       "contrato": 19060774212.149998,
-      "ejecutado": 6709200290.549999,
-      "previsto": 6262532810.355982,
+      "ejecutado": 6763412164.4,
+      "previsto": 6351194934.329127,
       "fin": "2027-07-31",
       "plazo": 0.3888888888888889,
       "toneladas_previstas": 97182.03160000002,
-      "toneladas_colocadas": 33075.379199999996,
+      "toneladas_colocadas": 33393.655199999994,
       "longitud_total_m": 66630.0,
-      "longitud_intervenida_m": 21900.29059682644,
+      "longitud_intervenida_m": 22126.179780067723,
       "plazo_contrato_dias": 450,
       "dias_corridos_consumidos": 175,
       "plazo_corte": "2026-10-30",
       "inicio": "2026-05-08",
       "fin_prevista": "2027-07-31",
       "produccion_efectiva": {
-        "toneladas": 34350.4128,
-        "dias": 79,
-        "corte": "2026-10-28",
-        "promedio": 434.81535189873415
+        "toneladas": 34668.6888,
+        "dias": 80,
+        "corte": "2026-10-29",
+        "promedio": 433.35861000000006
       }
     },
     {
@@ -225,24 +225,24 @@
       "corto": "VIADUCTO / C. DESCENDENTE",
       "contratista": "FONTANA NICASTRO",
       "contrato": 6168487211.29,
-      "ejecutado": 3675409127.999999,
-      "previsto": 2076706355.8249807,
+      "ejecutado": 3752452973.81,
+      "previsto": 2093662412.1011498,
       "fin": "2027-02-14",
       "plazo": 0.6,
       "toneladas_previstas": 24900.177200000002,
-      "toneladas_colocadas": 14275.163600000002,
+      "toneladas_colocadas": 14584.187600000001,
       "longitud_total_m": 7944.0,
-      "longitud_intervenida_m": 3640.8674910313403,
+      "longitud_intervenida_m": 3760.9685367306893,
       "plazo_contrato_dias": 270,
       "dias_corridos_consumidos": 162,
       "plazo_corte": "2026-10-30",
       "inicio": "2026-05-21",
       "fin_prevista": "2027-02-14",
       "produccion_efectiva": {
-        "toneladas": 14275.1636,
-        "dias": 83,
-        "corte": "2026-10-28",
-        "promedio": 171.98992289156627
+        "toneladas": 14584.187600000001,
+        "dias": 84,
+        "corte": "2026-10-29",
+        "promedio": 173.62128095238097
       }
     },
     {
@@ -252,24 +252,24 @@
       "corto": "KM 250 (CONESA) A KM 225 (ESQ. CROTTO)",
       "contratista": "MARCALBA",
       "contrato": 11981882529.25,
-      "ejecutado": 6815552193.049999,
-      "previsto": 4079412728.2169313,
+      "ejecutado": 6862473532.53,
+      "previsto": 4127682417.6403847,
       "fin": "2027-06-06",
       "plazo": 0.3888888888888889,
       "toneladas_previstas": 43366.584,
-      "toneladas_colocadas": 24320.013359999997,
+      "toneladas_colocadas": 24607.713359999994,
       "longitud_total_m": 25000.0,
-      "longitud_intervenida_m": 12536.483541769932,
+      "longitud_intervenida_m": 12739.253988150384,
       "plazo_contrato_dias": 360,
       "dias_corridos_consumidos": 140,
       "plazo_corte": "2026-10-30",
       "inicio": "2026-06-12",
       "fin_prevista": "2027-06-06",
       "produccion_efectiva": {
-        "toneladas": 31897.892399999997,
-        "dias": 75,
-        "corte": "2026-10-28",
-        "promedio": 425.30523199999993
+        "toneladas": 32179.1724,
+        "dias": 76,
+        "corte": "2026-10-29",
+        "promedio": 423.4101631578947
       }
     },
     {
