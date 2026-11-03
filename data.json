@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-03",
-  "actualizado": "2026-11-03T14:38:34.858191+00:00",
+  "actualizado": "2026-11-03T14:39:40.131359+00:00",
   "obras": [
     {
       "id": "9",
@@ -199,7 +199,7 @@
       "contratista": "VIAL AGRO",
       "contrato": 24032992675.16,
       "ejecutado": 9968853780.599998,
-      "previsto": 10404949451.61484,
+      "previsto": 10740879954.741335,
       "fin": "2027-09-13",
       "plazo": 0.4166666666666667,
       "toneladas_previstas": 124714.5524,
@@ -214,7 +214,7 @@
       "produccion_efectiva": {
         "toneladas": 53688.632,
         "dias": 106,
-        "corte": "2026-10-29",
+        "corte": "2026-11-02",
         "promedio": 506.49652830188677
       }
     },
