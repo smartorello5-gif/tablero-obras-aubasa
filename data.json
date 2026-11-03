@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-03",
-  "actualizado": "2026-11-03T19:46:10.485743+00:00",
+  "actualizado": "2026-11-03T19:53:34.725067+00:00",
   "obras": [
     {
       "id": "9",
@@ -36,7 +36,7 @@
       "corto": "KM 273 (MAIPÚ) A KM 203 (DOLORES) ETAPA 1",
       "contratista": "POSE-COARCO UT",
       "contrato": 18864639802.9,
-      "ejecutado": 18322749983.63,
+      "ejecutado": 18341245042.0,
       "previsto": 15965716272.639467,
       "fin": "2027-03-15",
       "plazo": 0.7427466150870407,
@@ -50,10 +50,10 @@
       "inicio": "2025-10-15",
       "fin_prevista": "2027-03-15",
       "produccion_efectiva": {
-        "toneladas": 104117.06351999998,
+        "toneladas": 104135.71143999998,
         "dias": 183,
         "corte": "2026-11-02",
-        "promedio": 568.9457022950819
+        "promedio": 569.0476034972677
       }
     },
     {
