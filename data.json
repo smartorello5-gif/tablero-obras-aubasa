@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-03",
-  "actualizado": "2026-11-03T14:00:03.554481+00:00",
+  "actualizado": "2026-11-03T14:01:39.633995+00:00",
   "obras": [
     {
       "id": "9",
@@ -90,8 +90,8 @@
       "corto": "4TO CARRIL + REPAV. KM 20,0 A KM 30,42 CALZ. ASC.",
       "contratista": "BRIALES - PELQUE UT",
       "contrato": 12487146809.430002,
-      "ejecutado": 12206462725.070002,
-      "previsto": 8227166352.923381,
+      "ejecutado": 12228555855.880003,
+      "previsto": 8376769109.252898,
       "fin": "2027-03-03",
       "plazo": 0.7311111111111112,
       "toneladas_previstas": 53307.15424,
@@ -106,7 +106,7 @@
       "produccion_efectiva": {
         "toneladas": 57543.32272,
         "dias": 137,
-        "corte": "2026-10-29",
+        "corte": "2026-11-02",
         "promedio": 420.0242534306569
       }
     },
