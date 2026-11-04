@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-04",
-  "actualizado": "2026-11-04T18:23:33.354314+00:00",
+  "actualizado": "2026-11-04T18:28:35.855222+00:00",
   "obras": [
     {
       "id": "9",
@@ -63,24 +63,24 @@
       "corto": "4TO CARRIL + REPAV. KM 11,4 A KM 20,0 CALZ. ASCEN.",
       "contratista": "KAVOS S.A. - C&E UT",
       "contrato": 8877909055.61,
-      "ejecutado": 8668902177.429998,
-      "previsto": 8661594145.966183,
+      "ejecutado": 8671435220.679998,
+      "previsto": 8664127189.216782,
       "fin": "2026-11-02",
       "plazo": 1.0027777777777778,
       "toneladas_previstas": 41927.89952,
-      "toneladas_colocadas": 38940.242880000005,
+      "toneladas_colocadas": 38954.678400000004,
       "longitud_total_m": 8500.0,
-      "longitud_intervenida_m": 8217.189706242076,
+      "longitud_intervenida_m": 8224.841424456594,
       "plazo_contrato_dias": 360,
       "dias_corridos_consumidos": 361,
       "plazo_corte": "2026-11-04",
       "inicio": "2025-11-08",
       "fin_prevista": "2026-11-02",
       "produccion_efectiva": {
-        "toneladas": 38935.980480000006,
+        "toneladas": 38950.416000000005,
         "dias": 123,
         "corte": "2026-11-02",
-        "promedio": 316.55268682926834
+        "promedio": 316.67004878048783
       }
     },
     {
