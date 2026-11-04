@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-04",
-  "actualizado": "2026-11-04T13:23:09.942182+00:00",
+  "actualizado": "2026-11-04T13:28:39.600122+00:00",
   "obras": [
     {
       "id": "9",
@@ -171,24 +171,24 @@
       "corto": "KM 340 (CNEL. VIDAL) A KM 273 (MAIPÚ) ETAPA 2",
       "contratista": "FONTANA-LUCIANO UT",
       "contrato": 19060774212.149998,
-      "ejecutado": 7145611581.059999,
-      "previsto": 6716590990.975408,
+      "ejecutado": 7114923978.719999,
+      "previsto": 6810626895.325402,
       "fin": "2027-07-31",
       "plazo": 0.4,
       "toneladas_previstas": 97182.03160000002,
-      "toneladas_colocadas": 35682.4552,
+      "toneladas_colocadas": 35481.413199999995,
       "longitud_total_m": 66630.0,
-      "longitud_intervenida_m": 23651.610976023956,
+      "longitud_intervenida_m": 23508.92596937188,
       "plazo_contrato_dias": 450,
       "dias_corridos_consumidos": 180,
       "plazo_corte": "2026-11-04",
       "inicio": "2026-05-08",
       "fin_prevista": "2027-07-31",
       "produccion_efectiva": {
-        "toneladas": 37059.9592,
+        "toneladas": 36858.9172,
         "dias": 84,
         "corte": "2026-11-02",
-        "promedio": 441.1899904761905
+        "promedio": 438.7966333333334
       }
     },
     {
