@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-04",
-  "actualizado": "2026-11-04T12:29:37.190923+00:00",
+  "actualizado": "2026-11-04T13:18:34.488940+00:00",
   "obras": [
     {
       "id": "9",
@@ -279,12 +279,12 @@
       "corto": "KM 225 (ESQ. CROTTO) A KM 250 (CONESA)",
       "contratista": "POSE",
       "contrato": 10895985337.449999,
-      "ejecutado": 4296868189.05,
-      "previsto": 1765219193.8812501,
+      "ejecutado": 4479294239.039999,
+      "previsto": 1832964727.5290728,
       "fin": "2027-05-06",
       "plazo": 0.44242424242424244,
       "toneladas_previstas": 53320.78199999999,
-      "toneladas_colocadas": 22550.617119999995,
+      "toneladas_colocadas": 23604.293919999996,
       "longitud_total_m": 25000.0,
       "longitud_intervenida_m": 11568.549750098848,
       "plazo_contrato_dias": 330,
@@ -293,10 +293,10 @@
       "inicio": "2026-06-11",
       "fin_prevista": "2027-05-06",
       "produccion_efectiva": {
-        "toneladas": 22550.61712,
-        "dias": 60,
-        "corte": "2026-11-02",
-        "promedio": 375.84361866666666
+        "toneladas": 23604.29392,
+        "dias": 61,
+        "corte": "2026-11-03",
+        "promedio": 386.9556380327869
       }
     },
     {
