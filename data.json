@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-04",
-  "actualizado": "2026-11-04T13:28:39.600122+00:00",
+  "actualizado": "2026-11-04T13:34:35.657687+00:00",
   "obras": [
     {
       "id": "9",
@@ -144,8 +144,8 @@
       "corto": "CONEXIÓN CITY BELL - RENGLÓN 2 (Centenario)",
       "contratista": "OCSA S.A.",
       "contrato": 9660000000.04,
-      "ejecutado": 4800138638.949999,
-      "previsto": 4800138638.936657,
+      "ejecutado": 4827845419.799999,
+      "previsto": 4827845419.791657,
       "fin": "2027-08-13",
       "plazo": 0.4759259259259259,
       "toneladas_previstas": 3462.6971999999996,
@@ -160,7 +160,7 @@
       "produccion_efectiva": {
         "toneladas": 0,
         "dias": 0,
-        "corte": "2026-11-02",
+        "corte": "2026-11-04",
         "promedio": null
       }
     },
@@ -171,7 +171,7 @@
       "corto": "KM 340 (CNEL. VIDAL) A KM 273 (MAIPÚ) ETAPA 2",
       "contratista": "FONTANA-LUCIANO UT",
       "contrato": 19060774212.149998,
-      "ejecutado": 7114923978.719999,
+      "ejecutado": 7119196806.719999,
       "previsto": 6810626895.325402,
       "fin": "2027-07-31",
       "plazo": 0.4,
