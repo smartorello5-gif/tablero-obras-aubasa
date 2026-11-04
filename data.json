@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-04",
-  "actualizado": "2026-11-04T15:39:38.321305+00:00",
+  "actualizado": "2026-11-04T15:40:42.360470+00:00",
   "obras": [
     {
       "id": "9",
@@ -293,10 +293,10 @@
       "inicio": "2026-06-11",
       "fin_prevista": "2027-05-06",
       "produccion_efectiva": {
-        "toneladas": 23606.06032,
+        "toneladas": 23607.57232,
         "dias": 61,
         "corte": "2026-11-03",
-        "promedio": 386.98459540983606
+        "promedio": 387.00938229508193
       }
     },
     {
