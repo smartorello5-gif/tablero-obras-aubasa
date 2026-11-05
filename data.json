@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-05",
-  "actualizado": "2026-11-05T14:24:34.712311+00:00",
+  "actualizado": "2026-11-05T14:36:54.917922+00:00",
   "obras": [
     {
       "id": "9",
@@ -171,12 +171,12 @@
       "corto": "KM 340 (CNEL. VIDAL) A KM 273 (MAIPÚ) ETAPA 2",
       "contratista": "FONTANA-LUCIANO UT",
       "contrato": 19060774212.149998,
-      "ejecutado": 7119196806.719999,
-      "previsto": 6810626895.325402,
+      "ejecutado": 7133658835.66,
+      "previsto": 6904662799.675397,
       "fin": "2027-07-31",
       "plazo": 0.4022222222222222,
       "toneladas_previstas": 97182.03160000002,
-      "toneladas_colocadas": 35481.413199999995,
+      "toneladas_colocadas": 35562.4332,
       "longitud_total_m": 66630.0,
       "longitud_intervenida_m": 23508.92596937188,
       "plazo_contrato_dias": 450,
@@ -185,10 +185,10 @@
       "inicio": "2026-05-08",
       "fin_prevista": "2027-07-31",
       "produccion_efectiva": {
-        "toneladas": 36858.9172,
-        "dias": 84,
-        "corte": "2026-11-02",
-        "promedio": 438.7966333333334
+        "toneladas": 36939.9372,
+        "dias": 85,
+        "corte": "2026-11-03",
+        "promedio": 434.58749647058823
       }
     },
     {
@@ -198,12 +198,12 @@
       "corto": "KM 273 (MAIPÚ) A KM 340 (CNEL. VIDAL) ETAPA 2",
       "contratista": "VIAL AGRO",
       "contrato": 24032992675.16,
-      "ejecutado": 9968853780.599998,
-      "previsto": 10740879954.741335,
+      "ejecutado": 10094347581.159998,
+      "previsto": 10916143011.182669,
       "fin": "2027-09-13",
       "plazo": 0.4203703703703704,
       "toneladas_previstas": 124714.5524,
-      "toneladas_colocadas": 52106.621600000006,
+      "toneladas_colocadas": 52687.28600000001,
       "longitud_total_m": 66630.0,
       "longitud_intervenida_m": 26823.596139154328,
       "plazo_contrato_dias": 540,
@@ -212,10 +212,10 @@
       "inicio": "2026-03-23",
       "fin_prevista": "2027-09-13",
       "produccion_efectiva": {
-        "toneladas": 53688.632,
-        "dias": 106,
-        "corte": "2026-11-02",
-        "promedio": 506.49652830188677
+        "toneladas": 54269.2964,
+        "dias": 107,
+        "corte": "2026-11-04",
+        "promedio": 507.1896859813084
       }
     },
     {
