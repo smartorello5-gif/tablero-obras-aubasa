@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-05",
-  "actualizado": "2026-11-05T15:29:34.252537+00:00",
+  "actualizado": "2026-11-05T15:38:34.229228+00:00",
   "obras": [
     {
       "id": "9",
@@ -9,8 +9,8 @@
       "corto": "KM 203 (DOLORES) A KM 273 (MAIPÚ) ETAPA 1",
       "contratista": "CONCRETNOR-MARCALBA",
       "contrato": 19084903133.419994,
-      "ejecutado": 18103891715.110004,
-      "previsto": 13754678954.540627,
+      "ejecutado": 18104056071.870007,
+      "previsto": 13881221525.10292,
       "fin": "2027-04-07",
       "plazo": 0.7148148148148148,
       "toneladas_previstas": 109205.63968,
@@ -25,7 +25,7 @@
       "produccion_efectiva": {
         "toneladas": 106661.1436,
         "dias": 163,
-        "corte": "2026-11-01",
+        "corte": "2026-11-04",
         "promedio": 654.3628441717791
       }
     },
