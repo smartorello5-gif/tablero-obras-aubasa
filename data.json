@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-05",
-  "actualizado": "2026-11-05T15:16:37.199654+00:00",
+  "actualizado": "2026-11-05T15:23:38.713458+00:00",
   "obras": [
     {
       "id": "9",
@@ -252,24 +252,24 @@
       "corto": "KM 250 (CONESA) A KM 225 (ESQ. CROTTO)",
       "contratista": "MARCALBA",
       "contrato": 11981882529.25,
-      "ejecutado": 7010987952.039999,
-      "previsto": 4326653846.31993,
+      "ejecutado": 7181787143.42,
+      "previsto": 4429085896.152568,
       "fin": "2027-06-06",
       "plazo": 0.40555555555555556,
       "toneladas_previstas": 43366.584,
-      "toneladas_colocadas": 25469.900759999993,
+      "toneladas_colocadas": 26132.396759999992,
       "longitud_total_m": 25000.0,
-      "longitud_intervenida_m": 13356.012654121541,
+      "longitud_intervenida_m": 13833.595879538436,
       "plazo_contrato_dias": 360,
       "dias_corridos_consumidos": 146,
       "plazo_corte": "2026-11-05",
       "inicio": "2026-06-12",
       "fin_prevista": "2027-06-06",
       "produccion_efectiva": {
-        "toneladas": 33034.7304,
-        "dias": 79,
-        "corte": "2026-11-02",
-        "promedio": 418.16114430379747
+        "toneladas": 33763.5864,
+        "dias": 81,
+        "corte": "2026-11-04",
+        "promedio": 416.8344
       }
     },
     {
