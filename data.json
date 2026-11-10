@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-10",
-  "actualizado": "2026-11-10T19:37:32.186819+00:00",
+  "actualizado": "2026-11-10T19:39:33.794871+00:00",
   "obras": [
     {
       "id": "9",
@@ -212,10 +212,10 @@
       "inicio": "2026-03-23",
       "fin_prevista": "2027-09-13",
       "produccion_efectiva": {
-        "toneladas": 61173.26483515425,
+        "toneladas": 61197.244835154255,
         "dias": 112,
         "corte": "2026-11-10",
-        "promedio": 546.1898645995915
+        "promedio": 546.4039717424487
       }
     },
     {
@@ -239,10 +239,10 @@
       "inicio": "2026-05-21",
       "fin_prevista": "2027-02-14",
       "produccion_efectiva": {
-        "toneladas": 14819.4896,
-        "dias": 88,
+        "toneladas": 14709.9776,
+        "dias": 87,
         "corte": "2026-11-09",
-        "promedio": 168.4032909090909
+        "promedio": 169.08020229885057
       }
     },
     {
