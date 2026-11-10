@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-10",
-  "actualizado": "2026-11-10T17:55:37.771051+00:00",
+  "actualizado": "2026-11-10T18:07:33.411261+00:00",
   "obras": [
     {
       "id": "9",
@@ -198,24 +198,24 @@
       "corto": "KM 273 (MAIPÚ) A KM 340 (CNEL. VIDAL) ETAPA 2",
       "contratista": "VIAL AGRO",
       "contrato": 24032992675.16,
-      "ejecutado": 10240602484.119999,
+      "ejecutado": 10757976256.839998,
       "previsto": 11354300652.286003,
       "fin": "2027-09-13",
       "plazo": 0.42962962962962964,
       "toneladas_previstas": 124714.5524,
-      "toneladas_colocadas": 53477.826,
+      "toneladas_colocadas": 56348.38962929521,
       "longitud_total_m": 66630.0,
-      "longitud_intervenida_m": 27358.304087483233,
+      "longitud_intervenida_m": 28945.68733291869,
       "plazo_contrato_dias": 540,
       "dias_corridos_consumidos": 232,
       "plazo_corte": "2026-11-10",
       "inicio": "2026-03-23",
       "fin_prevista": "2027-09-13",
       "produccion_efectiva": {
-        "toneladas": 55083.9572,
-        "dias": 108,
+        "toneladas": 58164.744595154254,
+        "dias": 109,
         "corte": "2026-11-08",
-        "promedio": 510.0366407407407
+        "promedio": 533.6215100472867
       }
     },
     {
