@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-10",
-  "actualizado": "2026-11-10T12:17:09.502215+00:00",
+  "actualizado": "2026-11-10T17:02:27.185044+00:00",
   "obras": [
     {
       "id": "9",
@@ -253,7 +253,7 @@
       "contratista": "MARCALBA",
       "contrato": 11981882529.25,
       "ejecutado": 7253067458.54,
-      "previsto": 4480301921.068887,
+      "previsto": 4685166020.734162,
       "fin": "2027-06-06",
       "plazo": 0.41944444444444445,
       "toneladas_previstas": 43366.584,
