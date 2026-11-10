@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-10",
-  "actualizado": "2026-11-10T19:33:33.248758+00:00",
+  "actualizado": "2026-11-10T19:36:30.883686+00:00",
   "obras": [
     {
       "id": "9",
@@ -306,12 +306,12 @@
       "corto": "DISTRIBUIDOR DIAGONAL 74",
       "contratista": "PELQUE",
       "contrato": 3324952614.45,
-      "ejecutado": 1098818657.02,
-      "previsto": 1080059603.7545,
+      "ejecutado": 1136950418.72,
+      "previsto": 1107510682.8661997,
       "fin": "2027-02-01",
       "plazo": 0.5333333333333333,
       "toneladas_previstas": 17112.8528,
-      "toneladas_colocadas": 6870.598,
+      "toneladas_colocadas": 6745.678,
       "longitud_total_m": null,
       "longitud_intervenida_m": null,
       "plazo_contrato_dias": 180,
@@ -320,10 +320,10 @@
       "inicio": "2026-08-06",
       "fin_prevista": "2027-02-01",
       "produccion_efectiva": {
-        "toneladas": 2494.066,
+        "toneladas": 2452.426,
         "dias": 8,
-        "corte": "2026-11-04",
-        "promedio": 311.75825
+        "corte": "2026-11-06",
+        "promedio": 306.55325
       }
     }
   ],
