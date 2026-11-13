@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-13",
-  "actualizado": "2026-11-13T14:15:11.734562+00:00",
+  "actualizado": "2026-11-13T14:22:10.343817+00:00",
   "obras": [
     {
       "id": "9",
@@ -9,7 +9,7 @@
       "corto": "KM 203 (DOLORES) A KM 273 (MAIPÚ) ETAPA 1",
       "contratista": "CONCRETNOR-MARCALBA",
       "contrato": 19084903133.419994,
-      "ejecutado": 18135686180.040005,
+      "ejecutado": 18136758071.940006,
       "previsto": 14387391807.352097,
       "fin": "2027-04-07",
       "plazo": 0.7296296296296296,
@@ -25,7 +25,7 @@
       "produccion_efectiva": {
         "toneladas": 106041.2908,
         "dias": 161,
-        "corte": "2026-11-09",
+        "corte": "2026-11-12",
         "promedio": 658.6415577639751
       }
     },
@@ -36,8 +36,8 @@
       "corto": "KM 273 (MAIPÚ) A KM 203 (DOLORES) ETAPA 1",
       "contratista": "POSE-COARCO UT",
       "contrato": 18864639802.9,
-      "ejecutado": 18379196926.89,
-      "previsto": 16400361324.646389,
+      "ejecutado": 18397447366.79,
+      "previsto": 16586637775.506498,
       "fin": "2027-03-15",
       "plazo": 0.7620889748549323,
       "toneladas_previstas": 4529.990000000001,
@@ -52,7 +52,7 @@
       "produccion_efectiva": {
         "toneladas": 103886.92168,
         "dias": 181,
-        "corte": "2026-11-09",
+        "corte": "2026-11-12",
         "promedio": 573.9608932596685
       }
     },
