@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-17",
-  "actualizado": "2026-11-17T13:33:40.209014+00:00",
+  "actualizado": "2026-11-17T15:13:39.839611+00:00",
   "obras": [
     {
       "id": "9",
@@ -9,7 +9,7 @@
       "corto": "KM 203 (DOLORES) A KM 273 (MAIPÚ) ETAPA 1",
       "contratista": "CONCRETNOR-MARCALBA",
       "contrato": 19084903133.419994,
-      "ejecutado": 18145922747.690006,
+      "ejecutado": 18142469826.580006,
       "previsto": 14640476948.476685,
       "fin": "2027-04-07",
       "plazo": 0.737037037037037,
@@ -25,7 +25,7 @@
       "produccion_efectiva": {
         "toneladas": 106661.1436,
         "dias": 163,
-        "corte": "2026-11-15",
+        "corte": "2026-11-16",
         "promedio": 654.3628441717791
       }
     },
@@ -37,7 +37,7 @@
       "contratista": "POSE-COARCO UT",
       "contrato": 18864639802.9,
       "ejecutado": 18525447525.92,
-      "previsto": 16772914226.366608,
+      "previsto": 16835006376.65331,
       "fin": "2027-03-15",
       "plazo": 0.769825918762089,
       "toneladas_previstas": 104346.45799999998,
@@ -52,7 +52,7 @@
       "produccion_efectiva": {
         "toneladas": 104135.71143999998,
         "dias": 183,
-        "corte": "2026-11-15",
+        "corte": "2026-11-16",
         "promedio": 569.0476034972677
       }
     },
@@ -144,8 +144,8 @@
       "corto": "CONEXIÓN CITY BELL - RENGLÓN 2 (Centenario)",
       "contratista": "OCSA S.A.",
       "contrato": 9660000000.04,
-      "ejecutado": 4849964734.489999,
-      "previsto": 4849964734.477657,
+      "ejecutado": 4876184812.039999,
+      "previsto": 4876184812.034758,
       "fin": "2027-08-13",
       "plazo": 0.5,
       "toneladas_previstas": 3462.6971999999996,
@@ -160,7 +160,7 @@
       "produccion_efectiva": {
         "toneladas": 0,
         "dias": 0,
-        "corte": "2026-11-12",
+        "corte": "2026-11-16",
         "promedio": null
       }
     },
@@ -172,7 +172,7 @@
       "contratista": "FONTANA-LUCIANO UT",
       "contrato": 19060774212.149998,
       "ejecutado": 7498014753.869999,
-      "previsto": 7939057747.525338,
+      "previsto": 8033093651.875333,
       "fin": "2027-07-31",
       "plazo": 0.4288888888888889,
       "toneladas_previstas": 97182.03160000002,
@@ -187,7 +187,7 @@
       "produccion_efectiva": {
         "toneladas": 39145.1012,
         "dias": 92,
-        "corte": "2026-11-15",
+        "corte": "2026-11-17",
         "promedio": 425.4902304347826
       }
     },
@@ -198,12 +198,12 @@
       "corto": "KM 273 (MAIPÚ) A KM 340 (CNEL. VIDAL) ETAPA 2",
       "contratista": "VIAL AGRO",
       "contrato": 24032992675.16,
-      "ejecutado": 11708502465.8,
-      "previsto": 11880089821.610004,
+      "ejecutado": 11718914969.12,
+      "previsto": 11967721349.830671,
       "fin": "2027-09-13",
       "plazo": 0.4425925925925926,
       "toneladas_previstas": 124714.5524,
-      "toneladas_colocadas": 61474.410829295215,
+      "toneladas_colocadas": 61517.790829295205,
       "longitud_total_m": 66630.0,
       "longitud_intervenida_m": 31910.69142336053,
       "plazo_contrato_dias": 540,
@@ -212,10 +212,10 @@
       "inicio": "2026-03-23",
       "fin_prevista": "2027-09-13",
       "produccion_efectiva": {
-        "toneladas": 63437.08603515425,
-        "dias": 117,
-        "corte": "2026-11-15",
-        "promedio": 542.1973165397799
+        "toneladas": 63480.466035154255,
+        "dias": 118,
+        "corte": "2026-11-17",
+        "promedio": 537.970051145375
       }
     },
     {
@@ -225,24 +225,24 @@
       "corto": "VIADUCTO / C. DESCENDENTE",
       "contratista": "FONTANA NICASTRO",
       "contrato": 6168487211.29,
-      "ejecutado": 3690450424.71,
-      "previsto": 2411581699.5631976,
+      "ejecutado": 3810720986.69,
+      "previsto": 2632476168.937416,
       "fin": "2027-02-14",
       "plazo": 0.6666666666666666,
       "toneladas_previstas": 24900.177200000002,
-      "toneladas_colocadas": 14709.9776,
+      "toneladas_colocadas": 15294.631599999997,
       "longitud_total_m": 7944.0,
-      "longitud_intervenida_m": 3962.069697438826,
+      "longitud_intervenida_m": 4105.069785324561,
       "plazo_contrato_dias": 270,
       "dias_corridos_consumidos": 180,
       "plazo_corte": "2026-11-17",
       "inicio": "2026-05-21",
       "fin_prevista": "2027-02-14",
       "produccion_efectiva": {
-        "toneladas": 14709.9776,
-        "dias": 87,
-        "corte": "2026-11-09",
-        "promedio": 169.08020229885057
+        "toneladas": 15294.6316,
+        "dias": 91,
+        "corte": "2026-11-16",
+        "promedio": 168.07287472527474
       }
     },
     {
@@ -252,24 +252,24 @@
       "corto": "KM 250 (CONESA) A KM 225 (ESQ. CROTTO)",
       "contratista": "MARCALBA",
       "contrato": 11981882529.25,
-      "ejecutado": 7756828508.09,
-      "previsto": 4992462170.232076,
+      "ejecutado": 7826121479.68,
+      "previsto": 5043678195.148395,
       "fin": "2027-06-06",
       "plazo": 0.4388888888888889,
       "toneladas_previstas": 43366.584,
-      "toneladas_colocadas": 29024.870759999994,
+      "toneladas_colocadas": 29433.758759999997,
       "longitud_total_m": 25000.0,
-      "longitud_intervenida_m": 15841.637492463151,
+      "longitud_intervenida_m": 16087.271742675304,
       "plazo_contrato_dias": 360,
       "dias_corridos_consumidos": 158,
       "plazo_corte": "2026-11-17",
       "inicio": "2026-06-12",
       "fin_prevista": "2027-06-06",
       "produccion_efectiva": {
-        "toneladas": 36827.6784,
-        "dias": 87,
-        "corte": "2026-11-15",
-        "promedio": 423.306648275862
+        "toneladas": 37236.566399999996,
+        "dias": 88,
+        "corte": "2026-11-17",
+        "promedio": 423.14279999999997
       }
     },
     {
@@ -306,8 +306,8 @@
       "corto": "DISTRIBUIDOR DIAGONAL 74",
       "contratista": "PELQUE",
       "contrato": 3324952614.45,
-      "ejecutado": 1248331953.36,
-      "previsto": 1211559516.4144998,
+      "ejecutado": 1260632736.82,
+      "previsto": 1223860299.8734999,
       "fin": "2027-02-01",
       "plazo": 0.5722222222222222,
       "toneladas_previstas": 17112.8528,
@@ -322,7 +322,7 @@
       "produccion_efectiva": {
         "toneladas": 2452.426,
         "dias": 8,
-        "corte": "2026-11-15",
+        "corte": "2026-11-16",
         "promedio": 306.55325
       }
     }
