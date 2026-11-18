@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-18",
-  "actualizado": "2026-11-18T14:16:35.464020+00:00",
+  "actualizado": "2026-11-18T15:11:39.051760+00:00",
   "obras": [
     {
       "id": "9",
@@ -226,7 +226,7 @@
       "contratista": "FONTANA NICASTRO",
       "contrato": 6168487211.29,
       "ejecutado": 3810720986.69,
-      "previsto": 2632476168.937416,
+      "previsto": 2664032521.7051616,
       "fin": "2027-02-14",
       "plazo": 0.6703703703703704,
       "toneladas_previstas": 24900.177200000002,
