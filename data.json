@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-18",
-  "actualizado": "2026-11-18T15:11:39.051760+00:00",
+  "actualizado": "2026-11-18T18:59:37.474230+00:00",
   "obras": [
     {
       "id": "9",
@@ -65,17 +65,17 @@
       "contrato": 8877909055.61,
       "ejecutado": 8684798424.789999,
       "previsto": 8677490393.324183,
-      "fin": "2026-11-02",
-      "plazo": 1.0416666666666667,
+      "fin": "2026-12-31",
+      "plazo": 0.8949880668257757,
       "toneladas_previstas": 41927.89952,
       "toneladas_colocadas": 38940.588480000006,
       "longitud_total_m": 8500.0,
       "longitud_intervenida_m": 8217.372895612112,
-      "plazo_contrato_dias": 360,
+      "plazo_contrato_dias": 419,
       "dias_corridos_consumidos": 375,
       "plazo_corte": "2026-11-18",
       "inicio": "2025-11-08",
-      "fin_prevista": "2026-11-02",
+      "fin_prevista": "2026-12-31",
       "produccion_efectiva": {
         "toneladas": 38940.588480000006,
         "dias": 123,
