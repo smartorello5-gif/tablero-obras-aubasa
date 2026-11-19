@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-19",
-  "actualizado": "2026-11-19T12:21:36.283432+00:00",
+  "actualizado": "2026-11-19T13:43:30.852304+00:00",
   "obras": [
     {
       "id": "9",
@@ -162,33 +162,6 @@
         "dias": 0,
         "corte": "2026-11-17",
         "promedio": null
-      }
-    },
-    {
-      "id": "13",
-      "nombre": "AUTOVÍA N°2 DESCENDENTE",
-      "tramo": "KM 340 (CNEL. VIDAL) A KM 273 (MAIPÚ) ETAPA 2",
-      "corto": "KM 340 (CNEL. VIDAL) A KM 273 (MAIPÚ) ETAPA 2",
-      "contratista": "FONTANA-LUCIANO UT",
-      "contrato": 19060774212.149998,
-      "ejecutado": 7589356639.379999,
-      "previsto": 8127129556.2253275,
-      "fin": "2027-07-31",
-      "plazo": 0.43333333333333335,
-      "toneladas_previstas": 97182.03160000002,
-      "toneladas_colocadas": 37824.65359999999,
-      "longitud_total_m": 66630.0,
-      "longitud_intervenida_m": 25075.188063880134,
-      "plazo_contrato_dias": 450,
-      "dias_corridos_consumidos": 195,
-      "plazo_corte": "2026-11-19",
-      "inicio": "2026-05-08",
-      "fin_prevista": "2027-07-31",
-      "produccion_efectiva": {
-        "toneladas": 39348.4352,
-        "dias": 93,
-        "corte": "2026-11-17",
-        "promedio": 423.1014537634409
       }
     },
     {
