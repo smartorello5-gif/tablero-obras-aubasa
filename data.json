@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-20",
-  "actualizado": "2026-11-20T16:45:35.338795+00:00",
+  "actualizado": "2026-11-20T16:50:34.357351+00:00",
   "obras": [
     {
       "id": "9",
@@ -97,7 +97,7 @@
       "toneladas_previstas": 53307.15424,
       "toneladas_colocadas": 59047.44967999999,
       "longitud_total_m": 10420.0,
-      "longitud_intervenida_m": 10531.10688956965,
+      "longitud_intervenida_m": 10420.0,
       "plazo_contrato_dias": 450,
       "dias_corridos_consumidos": 346,
       "plazo_corte": "2026-11-20",
