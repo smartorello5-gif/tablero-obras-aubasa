@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-20",
-  "actualizado": "2026-11-20T13:18:57.156835+00:00",
+  "actualizado": "2026-11-20T15:11:33.251135+00:00",
   "obras": [
     {
       "id": "9",
@@ -10,7 +10,7 @@
       "contratista": "CONCRETNOR-MARCALBA",
       "contrato": 19084903133.419994,
       "ejecutado": 18144613610.380005,
-      "previsto": 14767019519.038979,
+      "previsto": 14830290804.320126,
       "fin": "2027-04-07",
       "plazo": 0.7425925925925926,
       "toneladas_previstas": 109205.63968,
