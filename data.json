@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-25",
-  "actualizado": "2026-11-25T17:20:34.687513+00:00",
+  "actualizado": "2026-11-25T17:29:35.027945+00:00",
   "obras": [
     {
       "id": "9",
@@ -133,7 +133,7 @@
       "produccion_efectiva": {
         "toneladas": 0,
         "dias": 0,
-        "corte": "2026-11-23",
+        "corte": "2026-11-24",
         "promedio": null
       }
     },
