@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-25",
-  "actualizado": "2026-11-25T17:42:35.547964+00:00",
+  "actualizado": "2026-11-25T18:58:34.333005+00:00",
   "obras": [
     {
       "id": "9",
@@ -225,12 +225,12 @@
       "corto": "VIADUCTO / C. DESCENDENTE",
       "contratista": "FONTANA NICASTRO",
       "contrato": 6168487211.29,
-      "ejecutado": 4001119668.6100006,
-      "previsto": 2853370638.3116345,
+      "ejecutado": 4025016919.96,
+      "previsto": 2884926991.07938,
       "fin": "2027-02-14",
       "plazo": 0.6962962962962963,
       "toneladas_previstas": 24900.177200000002,
-      "toneladas_colocadas": 16235.9076,
+      "toneladas_colocadas": 16297.1276,
       "longitud_total_m": 7944.0,
       "longitud_intervenida_m": 4380.735077697858,
       "plazo_contrato_dias": 270,
@@ -239,10 +239,10 @@
       "inicio": "2026-05-21",
       "fin_prevista": "2027-02-14",
       "produccion_efectiva": {
-        "toneladas": 16235.9076,
-        "dias": 95,
-        "corte": "2026-11-23",
-        "promedio": 170.9042905263158
+        "toneladas": 16297.1276,
+        "dias": 96,
+        "corte": "2026-11-24",
+        "promedio": 169.76174583333332
       }
     },
     {
