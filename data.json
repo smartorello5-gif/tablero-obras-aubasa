@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-26",
-  "actualizado": "2026-11-26T13:13:38.216432+00:00",
+  "actualizado": "2026-11-26T13:21:36.863505+00:00",
   "obras": [
     {
       "id": "9",
@@ -144,8 +144,8 @@
       "corto": "CONEXIÓN CITY BELL - RENGLÓN 2 (Centenario)",
       "contratista": "OCSA S.A.",
       "contrato": 9660000000.04,
-      "ejecutado": 4903352790.74,
-      "previsto": 4903352790.727257,
+      "ejecutado": 4931433867.139999,
+      "previsto": 4931433867.127256,
       "fin": "2027-08-13",
       "plazo": 0.5166666666666667,
       "toneladas_previstas": 3462.6971999999996,
@@ -160,7 +160,7 @@
       "produccion_efectiva": {
         "toneladas": 0,
         "dias": 0,
-        "corte": "2026-11-24",
+        "corte": "2026-11-25",
         "promedio": null
       }
     },
