@@ -1,6 +1,6 @@
 {
   "modificado": "2026-11-26",
-  "actualizado": "2026-11-26T13:53:43.329157+00:00",
+  "actualizado": "2026-11-26T17:27:41.577073+00:00",
   "obras": [
     {
       "id": "9",
@@ -279,12 +279,12 @@
       "corto": "KM 225 (ESQ. CROTTO) A KM 250 (CONESA)",
       "contratista": "POSE",
       "contrato": 10895985337.449999,
-      "ejecutado": 6182931527.61,
-      "previsto": 3255620934.133352,
+      "ejecutado": 6370244565.379999,
+      "previsto": 3323366467.7811747,
       "fin": "2027-05-06",
       "plazo": 0.509090909090909,
       "toneladas_previstas": 53320.78199999999,
-      "toneladas_colocadas": 32565.117519999993,
+      "toneladas_colocadas": 33620.57992,
       "longitud_total_m": 25000.0,
       "longitud_intervenida_m": 11570.121376994623,
       "plazo_contrato_dias": 330,
@@ -293,10 +293,10 @@
       "inicio": "2026-06-11",
       "fin_prevista": "2027-05-06",
       "produccion_efectiva": {
-        "toneladas": 32565.11752,
-        "dias": 72,
-        "corte": "2026-11-24",
-        "promedio": 452.2932988888889
+        "toneladas": 33620.57992,
+        "dias": 73,
+        "corte": "2026-11-25",
+        "promedio": 460.55588931506844
       }
     },
     {
@@ -306,8 +306,8 @@
       "corto": "DISTRIBUIDOR DIAGONAL 74",
       "contratista": "PELQUE",
       "contrato": 3324952614.45,
-      "ejecutado": 1453074025.3000002,
-      "previsto": 1416301588.3571997,
+      "ejecutado": 1457192113.71,
+      "previsto": 1420419676.7671995,
       "fin": "2027-02-01",
       "plazo": 0.6222222222222222,
       "toneladas_previstas": 17112.8528,
@@ -322,7 +322,7 @@
       "produccion_efectiva": {
         "toneladas": 3232.492,
         "dias": 11,
-        "corte": "2026-11-24",
+        "corte": "2026-11-25",
         "promedio": 293.8629090909091
       }
     }
